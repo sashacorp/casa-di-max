@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 
 
 
-const IndexPage = () => {
+const Contact = () => {
   return (
     <Layout>
       
@@ -11,6 +11,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default Contact
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Contact</title>
