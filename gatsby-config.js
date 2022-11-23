@@ -29,6 +29,14 @@ module.exports = {
       "name": "pages",
       "path": "./src/pages/"
     },
-    __key: "pages"
-  }]
+    __key: "pages",
+},{
+  resolve: 'gatsby-source-filesystem',
+  options: {
+    "name": "posts",
+    "path": `${__dirname}/src/mdx/posts`
+  },
+  __key: "posts",
+}
+]
 };

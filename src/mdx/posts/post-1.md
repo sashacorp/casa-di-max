@@ -1,0 +1,4 @@
+---
+title: Blog Post 1
+slug: /post-1
+---
