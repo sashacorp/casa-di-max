@@ -3,20 +3,27 @@
  */
 module.exports = {
   siteMetadata: {
+    // Domain
     title: `Casa Di Max`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-sass", {
+   // CMS
+   // SASS
+  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-sass",
+     // Google Analytics
+  {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
       "trackingId": "342437115"
     }
+    // images and sitemap 
   }, "gatsby-plugin-image", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/icon.png"
+      "icon": "src/images/logocasadimax.svg"
     }
-  }, "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+    // mdx plugin
+  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
@@ -29,14 +36,17 @@ module.exports = {
       "name": "pages",
       "path": "./src/pages/"
     },
-    __key: "pages",
 },{
   resolve: 'gatsby-source-filesystem',
   options: {
     "name": "posts",
-    "path": `${__dirname}/src/mdx/posts`
+    "path": `./src/mdx/posts`
   },
-  __key: "posts",
-}
+},{
+  resolve: `gatsby-plugin-page-creator`,
+  options: {
+    path: `./src/mdx/posts`,
+  },
+}, "gatsby-plugin-mdx",
 ]
 };

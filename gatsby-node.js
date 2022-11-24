@@ -1,42 +1,44 @@
-const path = require("path")
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
+exports.createPages =  async ({ actions, graphql }) => {
   const { createPage } = actions
 
-  const result = await graphql(`
+  const blogPostTemplate = require.resolve(`./src/templates/posts.js`)
+
+  const blogPost = await graphql(`
     query {
-      allMdx {
-        nodes {
-          id
-          frontmatter {
-            slug
-          }
-          internal {
-            contentFilePath
+      allMdx(limit: 1000){
+          nodes {
+            id
+            frontmatter {
+                 title,
+                 slug
+            }
+            internal {
+              contentFilePath
+            }
           }
         }
       }
+  `).then( blogPost => {
+    if (blogPost.errors) {
+      return Promise.reject(blogPost.errors)
     }
-  `)
 
-  if (result.errors) {
-    reporter.panicOnBuild('Error loading MDX result', result.errors)
-  }
-
-  // Create blog post pages.
-  const posts = result.data.allMdx.nodes
-
-  // you'll call `createPage` for each result
-  posts.forEach(node => {
-    createPage({
-      // As mentioned above you could also query something else like frontmatter.title above and use a helper function
-      // like slugify to create a slug
-      path: node.frontmatter.slug,
-      // Provide the path to the MDX content file so webpack can pick it up and transform it into JSX
-      component: node.internal.contentFilePath,
-      // You can use the values in this context in
-      // our page layout component
-      context: { id: node.id },
+      blogPost.data.allMdx.nodes.forEach( node  => {
+      createPage({
+        path: node.frontmatter.slug,
+        component: `${blogPostTemplate}?__contentFilePath=${node.internal.contentFilePath}`,
+        context: {
+          // additional data can be passed via context
+          slug: node.frontmatter.slug,
+          title: node.frontmatter.title,
+          id: node.id,
+        },
+      })
     })
   })
+  
+  return blogPost
+
+
 }
