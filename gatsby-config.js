@@ -1,6 +1,9 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+ require("dotenv").config() 
+ 
 module.exports = {
   siteMetadata: {
     // Domain
@@ -36,6 +39,14 @@ module.exports = {
       "name": "pages",
       "path": "./src/pages/"
     },
-},
+}, 
+// SHOPIFY 
+{
+  resolve: "gatsby-source-shopify",
+    options: {
+      password: process.env.SHOPIFY_PASSWORD,
+      storeUrl: process.env.SHOPIFY_URL
+    }
+}
 ]
 };
