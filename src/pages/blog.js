@@ -7,7 +7,7 @@ import { Link } from "gatsby"
 const Blog = () => {
   return (
     <Layout>
-      <Link to="/post-1">Post</Link>
+      <Link to="/blog/post-1">Post</Link>
     </Layout>
   )
 }
