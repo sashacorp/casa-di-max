@@ -9,6 +9,7 @@ module.exports = {
     // Domain
     title: `Casa Di Max`,
     siteUrl: `https://www.yourdomain.tld`,
+    admin: `SashaCorp`
   },
    // CMS
    // SASS

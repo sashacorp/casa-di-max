@@ -1,0 +1,26 @@
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        vertical-align: middle;
+        
+        a, a:hover, a:focus, a:active {
+            text-decoration: none;
+            color: black;
+            padding: 0.3rem;
+            font-size: 1rem;
+       }
+    }
+}
+
+
+.Logo {
+
+    img {
+        width: 10rem;
+    }
+}

@@ -1,10 +1,16 @@
 import * as React from 'react'
+import Landing from '../images/casadimaxLanding.svg'
+import '../styles/styles.scss'
 
 const WelcomeSection = () => {
    return (
-      <div>
+      <div className="WelcomeSection">
+         <div className="Title">
          <h1>Casa di Max</h1>
-         <h2>Onlus</h2>
+         </div>
+         <div className="Media">
+         <img src={Landing} alt="landing"/>
+         </div>
       </div>
    )
 }
