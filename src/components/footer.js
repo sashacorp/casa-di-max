@@ -1,9 +1,9 @@
 import * as React from 'react'
 
-const Footer = () => {
+const Footer = ({siteTitle}) => {
    return (
-      <div>
-         <h1>Footer</h1>
+      <div >
+         <h1 siteTitle="Footer">Footer</h1>
       </div>
    )
 }
