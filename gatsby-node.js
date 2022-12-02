@@ -5,6 +5,7 @@ exports.createPages =  async ({ actions, graphql }) => {
   const blogPostTemplate = require.resolve(`./src/templates/postsTemplate.js`)
   const catTemplate = require.resolve(`./src/templates/catsTemplate`)
   const dogTemplate = require.resolve(`./src/templates/dogsTemplate`)
+  const donationTemplate = require.resolve(`./src/templates/donationTemplate`)
 
   // POSTS 
   const blogPost = await graphql(`
@@ -122,7 +123,47 @@ exports.createPages =  async ({ actions, graphql }) => {
     })
   })
 
-  return Promise.all([blogPost, cat, dog])
+  // DONATION
+
+  const donation =await graphql(`
+  query {
+    allShopifyProduct(sort: { title: ASC }) {
+      edges {
+        node {
+          title
+          shopifyId
+          handle
+          description
+          priceRangeV2 {
+            maxVariantPrice {
+              amount
+            }
+            minVariantPrice {
+              amount
+            }
+          }
+          status
+        }
+      }
+    }
+  }
+  `).then( result=> {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
+    
+    result.data.allShopifyProduct.edges.forEach(({ node }) => {
+    createPage({
+      path: `/donate/${node.handle}`,
+      component: `${donationTemplate}`,
+      context: {
+        product: node,
+      },
+    })
+  })
+}) 
+
+  return Promise.all([blogPost, cat, dog, donation])
 
 
 }
