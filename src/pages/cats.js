@@ -1,17 +1,49 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 
 
-const Cats = () => {
+const Cats = ({ data }) => {
+  
   return (
     <Layout>
-      <Link to="/cats/cat-1">Cat</Link>
+       <ul>
+          {data.allMdx.edges.map(({ node }) => (
+            <li key={node.id}>
+               <Link to={`${node.frontmatter.slug}`}>{node.frontmatter.title}</Link>
+            </li>
+          ))}
+       </ul>
     </Layout>
   )
 }
 
+export const Head = () => <title>Cats</title>
+
 export default Cats
 
-export const Head = () => <title>Cats</title>
+
+
+export const query= graphql`
+  query{
+    allMdx(filter: {frontmatter: {slug: {regex: "\\/cats//"}}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            slug
+            title
+          }
+          tableOfContents(maxDepth: 10)
+          internal {
+            contentFilePath
+          }
+        }
+      }
+      pageInfo {
+        currentPage
+      }
+    }
+  }`
+
