@@ -1,17 +1,25 @@
 .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     position: fixed;
-    top: 0;
-    width: 100%;
+    background-color: white;
+    opacity: 80%;
+    width: fit-content;
+    height: auto;
     ul {
         display: flex;
         flex-direction: row;
         list-style-type: none;
-        vertical-align: middle;
+        justify-content: center;
+
+        li {
+            padding: 10px;
+        }
         
         a, a:hover, a:focus, a:active {
             text-decoration: none;
             color: black;
-            padding: 0.3rem;
             font-size: 1rem;
        }
     }
