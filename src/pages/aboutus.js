@@ -1,12 +1,14 @@
 import * as React from "react"
 import Layout from "../components/layout"
-
+import '../styles/styles.scss'
 
 
 const AboutUs = () => {
   return (
     <Layout>
-      
+      <div className="aboutus">
+        <h1>About us</h1>
+      </div>
     </Layout>
   )
 }

@@ -1,20 +1,23 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
-
+import '../styles/styles.scss'
 
 
 const Blog = ({ data }) => {
   
   return (
     <Layout>
-       <ul>
+      <div className="blog">
+        <h1>Blog</h1>
+        <ul>
           {data.allMdx.edges.map(({ node }) => (
             <li key={node.id}>
                <Link to={`${node.frontmatter.slug}`}>{node.frontmatter.title}</Link>
             </li>
           ))}
        </ul>
+      </div>  
     </Layout>
   )
 }

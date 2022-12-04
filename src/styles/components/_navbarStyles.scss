@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     vertical-align: middle;
-    background-color: rgba(104, 185, 132, 0.3);
+    background-color: $background-navbar;
     width: 90rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     ul {
@@ -16,22 +16,20 @@
         justify-content:end;
 
         li {
-            padding: 10px 1px 1px 1px;
+            padding: 10px 10px 1px 1px;
         }
         
         a, a:focus, a:active {
             text-decoration: none;
             color: white;
-            text-transform: uppercase;
+            text-transform: capitalize;
             font-size: 1rem;
             padding: 5px;
             font-weight: 100;
             opacity: 80%;
        }
         a:hover {
-            text-decoration: none;
-            text-transform: uppercase;
-            opacity: 95% ;
+            opacity: 100% ;
             border: 4px solid rgba(104, 185, 132, 0.5);
             border-radius: 3%;
         }

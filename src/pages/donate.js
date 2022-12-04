@@ -1,13 +1,14 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { Link, graphql } from 'gatsby'
-
+import '../styles/styles.scss'
 
 
 const Donate = ({ data }) => {
   return (
     <Layout>
-      <h1>Dona</h1>
+     <div className="donate">
+     <h1>Dona</h1>
       <ul>
        {data.allShopifyProduct.edges.map(({ node }) => (
         <li key={node.shopifyId}>
@@ -19,6 +20,7 @@ const Donate = ({ data }) => {
         </li>
        ))}
       </ul>
+     </div>
     </Layout>
   )
 }

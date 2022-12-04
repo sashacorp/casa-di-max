@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import { Link, graphql } from "gatsby"
+import '../styles/styles.scss'
 
 
 
@@ -8,6 +9,8 @@ const Cats = ({ data }) => {
   
   return (
     <Layout>
+      <div className="Cats"> 
+       <h1>Cats</h1>
        <ul>
           {data.allMdx.edges.map(({ node }) => (
             <li key={node.id}>
@@ -15,6 +18,7 @@ const Cats = ({ data }) => {
             </li>
           ))}
        </ul>
+      </div>
     </Layout>
   )
 }
