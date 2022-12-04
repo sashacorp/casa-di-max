@@ -8,7 +8,7 @@ const Donate = ({ data }) => {
   return (
     <Layout>
      <div className="donate">
-     <h1>Dona </h1>
+     <h1>Dona</h1>
       <ul>
        {data.allShopifyProduct.edges.map(({ node }) => (
         <li key={node.shopifyId}>
