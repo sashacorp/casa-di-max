@@ -1,12 +1,16 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import '../styles/styles.scss'
+import Logo from '../images/logocasadimax.svg'
 
 
 const NavBar = () => {
   return (
     <div className="navigation">
-         <ul>
+      <div className="Logo">
+        <img src={Logo} alt="logo"/>
+      </div>
+         <ul>   
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/aboutus">About</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
