@@ -3,8 +3,9 @@
     flex-direction: row;
     justify-content: space-between;
     vertical-align: middle;
+    position: fixed ;
     background-color: $green;
-    opacity: 70%;
+    opacity: 80%;
     width: 90rem;
     height: auto;
     ul {
@@ -18,12 +19,20 @@
             padding: 10px;
         }
         
-        a, a:hover, a:focus, a:active {
+        a, a:focus, a:active {
             text-decoration: none;
             color: white;
             text-transform: uppercase;
             font-size: 1rem;
+            padding: 5px;
        }
+        a:hover {
+            text-decoration: none;
+            background-color: #68B984;
+            text-transform: uppercase;
+            opacity: 70% ;
+            padding: 5px;
+        }
     }
 }
 
