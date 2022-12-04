@@ -11,7 +11,6 @@ const NavBar = () => {
         <Link to="/">
         <img src={Logo} alt="logo"/>
         </Link>
-        
       </div>
          <ul>   
                 <li><Link to="/">Home</Link></li>

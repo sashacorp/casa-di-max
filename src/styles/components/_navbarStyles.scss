@@ -39,9 +39,18 @@
 
 
 .Logo {
-    background-color: white;
+    display: flex;
+    flex-direction: row;
     opacity: 70%;
-    width: 5rem;
+    width: 17rem;
+
+    h2 {
+        text-transform: uppercase;
+        font-weight: 100;
+        color: white;
+
+    }
+
 
     img {
         height: 4rem;
