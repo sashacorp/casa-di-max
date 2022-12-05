@@ -7,6 +7,7 @@ const WelcomeSection = () => {
       <div className="WelcomeSection">
          <div className="Media">
          <img src={Landing} alt="landing"/>
+
          </div>
       </div>
    )
