@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect} from "react"
 import { Link } from "gatsby"
 import '../styles/styles.scss'
 import Logo from '../images/logocasadimax.svg'
 
 
+
 function NavBar () {
+  
   const [toggleMenu, setToggleMenu] = useState(false)
-  const [screenWidth, setScreenWidth ] = useState(window.innerWidth)
+  const [screenWidth, setScreenWidth ] = useState()
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu)
@@ -32,13 +34,13 @@ function NavBar () {
       {
         (toggleMenu || screenWidth > 700 ) && (
           <ul>   
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/aboutus">About</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/cats">Cats</Link></li>
-              <li><Link to="/dogs">Dogs</Link></li>
-              <li><Link to="/donate">Donate</Link></li>
-              <li><Link to="/contact">Contacts</Link></li>
+              <li key="home"><Link to="/">Home</Link></li>
+              <li key="about"><Link to="/aboutus">About</Link></li>
+              <li key="blog"><Link to="/blog">Blog</Link></li>
+              <li key="cats"><Link to="/cats">Cats</Link></li>
+              <li key="dogs"><Link to="/dogs">Dogs</Link></li>
+              <li key="donate"><Link to="/donate">Donate</Link></li>
+              <li key="contact"><Link to="/contact">Contacts</Link></li>
           </ul>
         )
       }
