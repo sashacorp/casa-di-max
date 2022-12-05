@@ -1,13 +1,23 @@
-import * as React from 'react'
+import React, { useEffect, useState } from "react"
 import Footer from './footer'
 import NavBar from './navbar'
 import '../styles/styles.scss'
 
 
-const Layout = ({children}) => {
+function Layout ({children}) {
+  const [windowWidth, setWindowWidth] = useState(0)
+  // const [windowHeight, setWindowHeight] = useState(ClientTypes.Mobile.h)
+
+  useEffect(() => {
+    const updateWindowSize = () => {
+      return setWindowWidth(window.innerWidth)
+    }
+    window.addEventListener('resize', updateWindowSize)
+  }, [])
+
     return (
       <main>
-        <NavBar/>
+        <NavBar width={windowWidth}/>
         {children}
         <Footer/>
       </main>

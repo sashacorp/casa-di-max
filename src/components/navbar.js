@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, {useState } from "react"
 import { Link } from "gatsby"
 import '../styles/styles.scss'
 import Logo from '../images/logocasadimax.svg'
@@ -6,21 +6,17 @@ import Logo from '../images/logocasadimax.svg'
 
 
 
-function NavBar () {
+function NavBar (props) {
   
   const [toggleMenu, setToggleMenu] = useState(true)
-  const [windowWidth, setWindowWidth] = useState(0)
+  
 
   const toggleNav = () => {
     return setToggleMenu(!toggleMenu)
   }
   
-  useEffect(() => {
-    const updateWidth = () => {
-      setWindowWidth(window.innerWidth);
-    }
-    window.addEventListener('resize', updateWidth)
-  }, [])
+  console.log(props.width)
+  
   return (
     <div className="navigation">
       <div className="Logo">
@@ -29,7 +25,7 @@ function NavBar () {
         </Link>
       </div>
           {(
-            (windowWidth > 600 || toggleMenu) && (
+            (props.width > 600 || toggleMenu) && (
               <ul>   
               <li key="home"><Link to="/">Home</Link></li>
               <li key="about"><Link to="/aboutus">About</Link></li>
