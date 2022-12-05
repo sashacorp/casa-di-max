@@ -41,6 +41,9 @@
     }
 }
 
+.toggle {
+    display: none;
+}
 
 .Logo {
     .img-link{
@@ -83,6 +86,12 @@
             width:100%; 
             padding: 5px;
             
+        }
+        .toggle {
+            display:block;
+            border: none;
+            background: none;
+            color:white;
         }
     }
 }

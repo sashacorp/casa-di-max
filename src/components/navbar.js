@@ -1,4 +1,4 @@
-import React, { componentDidMount, useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import '../styles/styles.scss'
 import Logo from '../images/logocasadimax.svg'
@@ -8,11 +8,19 @@ import Logo from '../images/logocasadimax.svg'
 
 function NavBar () {
   
-  function componentDidMount() {
-    const [toggleMenu, setToggleMenu] = useState(false)
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
-  }
+  const [toggleMenu, setToggleMenu] = useState(true)
+  const [windowWidth, setWindowWidth] = useState(0)
 
+  const toggleNav = () => {
+    return setToggleMenu(!toggleMenu)
+  }
+  
+  useEffect(() => {
+    const updateWidth = () => {
+      setWindowWidth(window.innerWidth);
+    }
+    window.addEventListener('resize', updateWidth)
+  }, [])
   return (
     <div className="navigation">
       <div className="Logo">
@@ -20,7 +28,9 @@ function NavBar () {
         <img src={Logo} alt="logo"/>
         </Link>
       </div>
-          <ul>   
+          {(
+            (windowWidth > 600 || toggleMenu) && (
+              <ul>   
               <li key="home"><Link to="/">Home</Link></li>
               <li key="about"><Link to="/aboutus">About</Link></li>
               <li key="blog"><Link to="/blog">Blog</Link></li>
@@ -28,7 +38,10 @@ function NavBar () {
               <li key="dogs"><Link to="/dogs">Dogs</Link></li>
               <li key="donate"><Link to="/donate">Donate</Link></li>
               <li key="contact"><Link to="/contact">Contacts</Link></li>
-          </ul>
+              </ul>
+            )
+          )}
+          <button className="toggle" onClick={toggleNav} alt="toggle button"> Button </button>
     </div>
   )
 }
