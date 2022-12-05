@@ -1,14 +1,18 @@
-import React from "react"
+import React, { componentDidMount, useEffect, useState } from "react"
 import { Link } from "gatsby"
 import '../styles/styles.scss'
 import Logo from '../images/logocasadimax.svg'
 
 
 
+
 function NavBar () {
   
-  // I tried to solve the global variable problem without passing it into useState() but I'm pretty sure it doesn't make any sense.
- 
+  function componentDidMount() {
+    const [toggleMenu, setToggleMenu] = useState(false)
+    const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  }
+
   return (
     <div className="navigation">
       <div className="Logo">
