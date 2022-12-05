@@ -2,9 +2,19 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 
+const { TRUE } = require('sass');
+
  require("dotenv").config() 
  
 module.exports = {
+  flags: {
+    DEV_SSR: true,
+    FAST_DEV: true, 
+    /* run all source plugins at the same time */
+    PARALLEL_SOURCING: true, 
+    /* log any attempts to mutate node directly*/
+    DETECT_NODE_MUTATIONS: true,
+  },
   siteMetadata: {
     // Domain
     title: `Casa Di Max`,

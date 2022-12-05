@@ -65,6 +65,7 @@
         ul {
             flex-direction: column;
             height: auto;
+            
 
             li:nth-child(1) {
                 border-top: 1px solid black;
@@ -74,8 +75,8 @@
                 width: 100%;
                 border-top: 1px solid black;
                 text-align: center;
-                margin-right: 0px;
-                padding: 20px 0;
+                margin: 0px;
+                padding: 20px 0px 0px 0px;
             }
         }
         .Logo {
