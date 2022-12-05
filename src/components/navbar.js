@@ -8,6 +8,7 @@ import Logo from '../images/logocasadimax.svg'
 function NavBar () {
   
   const [toggleMenu, setToggleMenu] = useState(false)
+  // I tried to solve the global variable problem without passing it into useState() but I'm pretty sure it doesn't make any sense.
   const [screenWidth, setScreenWidth ] = useState()
 
   const toggleNav = () => {
