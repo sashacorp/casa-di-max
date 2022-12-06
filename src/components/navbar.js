@@ -2,21 +2,19 @@ import React, {useState } from "react"
 import { Link } from "gatsby"
 import '../styles/styles.scss'
 import Logo from '../images/logocasadimax.svg'
+import ClientTypes from "./clienttypes"
 
-
+console.log(Logo)
 
 
 function NavBar (props) {
   
   const [toggleMenu, setToggleMenu] = useState(true)
-  
 
   const toggleNav = () => {
     return setToggleMenu(!toggleMenu)
   }
-  
-  console.log(props.width)
-  
+    
   return (
     <div className="navigation">
       <div className="Logo">
@@ -25,7 +23,7 @@ function NavBar (props) {
         </Link>
       </div>
           {(
-            (props.width > 600 || toggleMenu) && (
+            (props.width > ClientTypes.Tablet.w || toggleMenu) && (
               <ul>   
               <li key="home"><Link to="/">Home</Link></li>
               <li key="about"><Link to="/aboutus">About</Link></li>
@@ -37,7 +35,9 @@ function NavBar (props) {
               </ul>
             )
           )}
-          <button className="toggle" onClick={toggleNav} alt="toggle button"> Button </button>
+          <button className="toggle" onClick={toggleNav} alt="toggle button"> 
+           BUTTON
+           </button>
     </div>
   )
 }

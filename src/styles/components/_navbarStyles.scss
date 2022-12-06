@@ -62,9 +62,10 @@
 
 // MOBILE
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
     .navigation {
         flex-direction: column;
+        width: 100%;
         ul {
             flex-direction: column;
             height: auto;
@@ -92,6 +93,8 @@
             border: none;
             background: none;
             color:white;
+            cursor: pointer;
+            
         }
     }
 }

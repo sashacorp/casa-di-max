@@ -25,4 +25,16 @@
     }
 }
 
-
+@media screen and (max-width: 768px) {
+    .WelcomeSection {
+        height: 50vh;
+        max-width: 768px;
+        .Media {
+            width: 100%;
+            img {
+                width: 500px;
+                height: auto;
+            }
+        }
+    }
+}

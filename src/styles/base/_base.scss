@@ -26,3 +26,12 @@ main {
     max-width: 90rem;
     background-color: $green;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 768px;
+    }
+    main {
+        max-width: 768px;
+    }
+}
