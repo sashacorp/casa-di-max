@@ -32,13 +32,30 @@ module.exports = {
       "trackingId": "342437115"
     }
     // images and sitemap 
-  }, "gatsby-plugin-image","gatsby-plugin-mdx", "gatsby-plugin-sitemap", {
+  }, {
+    resolve: "gatsby-plugin-sharp",
+    options: {
+      defaults: {
+        formats: [`auto`, `webp`],
+        placeholder: `dominantColor`,
+        quality: 50,
+        breakpoints: [375, 768, 1366, 1920],
+        backgroundColor: `transparent`,
+        blurredOptions: {},
+        jpgOptions: {},
+        pngOptions: {},
+        webpOptions: {},
+        avifOptions: {},
+
+      }
+    }
+  }, "gatsby-transformer-sharp","gatsby-plugin-image","gatsby-plugin-mdx", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/logocasadimax.svg"
     }
     // mdx plugin
-  }, "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  }, {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",

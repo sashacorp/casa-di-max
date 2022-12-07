@@ -1,7 +1,7 @@
 import React, {useState } from "react"
 import { Link } from "gatsby"
 import '../styles/styles.scss'
-import Logo from '../images/logocasadimax.svg'
+import { Logo } from './gatsby-images/logo'
 import ClientTypes from "./clienttypes"
 
 console.log(Logo)
@@ -17,11 +17,11 @@ function NavBar (props) {
     
   return (
     <div className="navigation">
-      <div className="Logo">
-        <Link to="/" className="img-link">
-        <img src={Logo} alt="logo"/>
-        </Link>
-      </div>
+       <Link to="/" className="link-logo">
+       <Logo />
+       </Link>
+        
+      
           {(
             (props.width > ClientTypes.Tablet.w || toggleMenu) && (
               <ul>   

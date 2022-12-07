@@ -1,12 +1,12 @@
 import * as React from 'react'
-import Landing from '../images/casadimaxLanding.jpg'
+import { Hero} from './gatsby-images/welcomedesign'
 import '../styles/styles.scss'
 
 const WelcomeSection = () => {
    return (
       <div className="WelcomeSection">
          <div className="Media">
-         <img src={Landing} alt="landing"/>
+         <Hero/>
 
          </div>
       </div>

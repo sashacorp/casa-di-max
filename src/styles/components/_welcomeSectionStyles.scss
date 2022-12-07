@@ -17,11 +17,9 @@
     .Media {
         margin:0;
         padding:0;
-        width: 90rem;
-        img {
-            width: 90rem;
-            height: auto;
-            }
+        width: 100%;
+        
+        
     }
 }
 
@@ -29,12 +27,6 @@
     .WelcomeSection {
         height: 50vh;
         max-width: 768px;
-        .Media {
-            width: 100%;
-            img {
-                width: 500px;
-                height: auto;
-            }
-        }
+
     }
 }
