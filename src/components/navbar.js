@@ -3,13 +3,14 @@ import { Link } from "gatsby"
 import '../styles/styles.scss'
 import { Logo } from './gatsby-images/logo'
 import ClientTypes from "./clienttypes"
+import MenuIcon from '@mui/icons-material/Menu';
 
 console.log(Logo)
 
 
 function NavBar (props) {
   
-  const [toggleMenu, setToggleMenu] = useState(false)
+  const [toggleMenu, setToggleMenu] = useState(true)
 
   const toggleNav = () => {
     return setToggleMenu(!toggleMenu)
@@ -22,7 +23,7 @@ function NavBar (props) {
        <Logo />
        </Link>
        <button className="toggle" onClick={toggleNav} alt="toggle button"> 
-           Button
+           <MenuIcon fontSize="large"/>
       </button>
       </div>
        
