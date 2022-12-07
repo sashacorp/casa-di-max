@@ -9,7 +9,7 @@ console.log(Logo)
 
 function NavBar (props) {
   
-  const [toggleMenu, setToggleMenu] = useState(true)
+  const [toggleMenu, setToggleMenu] = useState(false)
 
   const toggleNav = () => {
     return setToggleMenu(!toggleMenu)
@@ -17,11 +17,16 @@ function NavBar (props) {
     
   return (
     <div className="navigation">
-       <Link to="/" className="link-logo">
+      <div className="relevant-nav">
+      <Link to="/" className="link-logo">
        <Logo />
        </Link>
+       <button className="toggle" onClick={toggleNav} alt="toggle button"> 
+           Button
+      </button>
+      </div>
+       
         
-      
           {(
             (props.width > ClientTypes.Tablet.w || toggleMenu) && (
               <ul>   
@@ -35,9 +40,7 @@ function NavBar (props) {
               </ul>
             )
           )}
-          <button className="toggle" onClick={toggleNav} alt="toggle button"> 
-           BUTTON
-           </button>
+          
     </div>
   )
 }
