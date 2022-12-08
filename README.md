@@ -1,4 +1,8 @@
-# To Do 8th Decembere 2022
+# Casa Di Max: Animal Shelter 
+[![Casa di Max](/src/images/casadimaxLanding.jpg "Animal Shelter, Sardinia, Italy")]
+
+## To Do 8th Decembere 2022
+
 
 1. Gatsby Shopify Plugin 
 2. MUI 
