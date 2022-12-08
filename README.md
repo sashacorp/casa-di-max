@@ -1,7 +1,7 @@
-# Casa Di Max: Animal Shelter 
+# Casa Di Max: Animal Shelter  {style=text-align:center}
 [![Casa di Max](/src/images/casadimaxLanding.jpg "Animal Shelter, Sardinia, Italy")](https://www.casadimax.org)
 
-## To Do 8th Decembere 2022
+## To Do 8th Decembere 2022 {style=text-align:center}
 
 
 1. Gatsby Shopify Plugin 
