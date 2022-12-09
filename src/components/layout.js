@@ -22,7 +22,7 @@ function Layout ({children}) {
     return (
       <main>
         <NavBar width={windowWidth}/>
-        {children}
+        <div width={windowWidth}>{children}</div>
         <Footer/>
       </main>
     )
