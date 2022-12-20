@@ -17,14 +17,16 @@ body {
     padding: 0%;
     margin: 0%;
     border: 0vh;
-    background-color: $green;
+    background-color: #DFE8CC;
+   
 }
 main {
     padding: 0%;
     margin: 0%;
     border: 0vh;
-    max-width: 90rem;
-    background-color: $green;
+    max-width: 100vw;
+    background-color: #DFE8CC;
+   
 }
 
 @media screen and (max-width: 768px) {

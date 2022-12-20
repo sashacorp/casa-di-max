@@ -1,5 +1,6 @@
 import * as React from 'react'
 import {  useStaticQuery, graphql } from 'gatsby'
+import { FooterImage } from './gatsby-images/footer'
 import '../styles/styles.scss'
 
 const Footer = ({sitetitle}) => {
@@ -13,10 +14,10 @@ const Footer = ({sitetitle}) => {
    }`)
    return (
       <div className="footer">
-         <h1 sitetitle="Footer">Footer</h1>
-         <p>powered by {data.site.siteMetadata.admin}</p>
+          <FooterImage />   
       </div>
    )
+       
 }
 
 export default Footer

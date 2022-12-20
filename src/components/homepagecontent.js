@@ -1,13 +1,20 @@
 import * as React from 'react'
-import ContentSection from '../components/contentsection'
+import ContentSection from './contentsection'
+import { Logo } from './gatsby-images/logo'
 
 const HomePageContent = () => {
     return (
         <div className='homepagecontent'>
         <ContentSection
           key="1"
-        >
-          <p>Il nostro rifugio deve il suo nome a Max, un cagnolino che qualche anno fa era stato affidato alla nostra presidentessa Barbara Pistis affinché' se ne prendesse cura, poiché' i suoi vecchi proprietari non avevano più' la possibilità' di dedicargli le dovute attenzioni. Purtroppo pero', un giorno Max è scomparso e da allora non è più' stato ritrovato.</p>
+        > 
+          <div className="media">
+            <Logo width={300} /> 
+          </div>
+          <div className="paragraph"> 
+          <p></p>
+          </div>
+         
         </ContentSection>
         <ContentSection
           key="2"
