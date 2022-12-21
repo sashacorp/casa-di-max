@@ -1,0 +1,73 @@
+.unsigned-card {
+    height: 100vh;
+    padding: 0%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    width: 100vw;
+    
+   h1 {
+    font-size: 4rem;
+    color: #E14D2A;
+   }
+    p {
+        font-size: 1.5rem; 
+        font-weight: 100;
+        color: black;
+    }
+  
+    img {
+        width: 40rem;
+    }
+
+    button{
+        padding: 1rem;
+        border: 0.2rem;
+        border-style: solid;
+        background-color: transparent;
+        color: black;
+        border-radius: 30px;
+        border-color: black;
+        margin-right: 1.4rem;  
+
+        h3 {
+            font-weight: 200;
+        }
+        
+        
+    }
+
+    button:hover {
+        border-color: #E14D2A;
+        color: #E14D2A;
+    }
+
+    
+}
+
+#max {
+    img {
+        width: 40rem;
+    }
+}
+
+#confidointe {
+  
+  img {
+    width: 35rem
+  }
+}
+
+#casadimax {
+    
+   img {
+     width: 33rem;
+   }
+}
+
+#sardinienhunde {
+    img {
+        width: 32rem;
+    }
+}
+

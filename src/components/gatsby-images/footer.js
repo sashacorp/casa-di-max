@@ -40,7 +40,7 @@ export function FooterImage() {
         }}
       >
         {/* Any content here will be centered in the component */}
-        <p>powered by SashaCorp</p>
+        <p>powered by <a href="https://www.sashacorp.dev/">SashaCorp</a></p>
       </div>
     </div>
   )

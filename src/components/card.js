@@ -16,7 +16,7 @@ const Card = ({ id, src, title, content }) => {
                         <h1>{title}</h1>
                         <p>{content}</p>
                         <div className="unsigned-card-button">
-                            <btn name="Learn more" />
+                            <button> Learn More </button>
                         </div>
                     </div>
                 </Col>

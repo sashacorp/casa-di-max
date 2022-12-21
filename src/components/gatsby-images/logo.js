@@ -5,8 +5,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 export function Logo() {
 
     return  <StaticImage 
-       src="../../images/logocasadimax.svg" 
+       src="../../images/logomax.png" 
        alt="Logo representing a dog"
-       width={100}
+       width={50}
     />
 }

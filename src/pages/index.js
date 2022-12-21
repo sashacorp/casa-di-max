@@ -1,8 +1,9 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import WelcomeSection from "../components/welcomesection"
-import HomePageContent from "../components/homepagecontent"
+import FlashCards from "../components/flashcards"
 import '../styles/styles.scss'
+import MotivationalSection from "../components/motivationalsection"
 
 
 
@@ -10,7 +11,8 @@ const IndexPage = () => {
   return (
     <Layout>
        <WelcomeSection/>
-       <HomePageContent />
+       <FlashCards />
+       <MotivationalSection />
     </Layout>
   )
 }

@@ -1,0 +1,40 @@
+.motivational-section {
+    display: grid;
+    grid-area: 1/1;
+    place-items: center center;
+    height: 100vh;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        font-size: 4rem;
+        color: #E14D2A;
+    }
+    button{
+        padding: 1rem;
+        border: 0.2rem;
+        border-style: solid;
+        background-color: transparent;
+        color: black;
+        border-radius: 30px;
+        border-color: black;
+        margin-right: 1.4rem;  
+
+        h3 {
+            font-weight: 200;
+            font-size: 2rem;
+        }
+        
+        
+    }
+
+    button:hover {
+        border-color: #E14D2A;
+        a {
+            color: #E14D2A;
+        }
+    }
+}

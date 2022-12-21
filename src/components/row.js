@@ -3,7 +3,7 @@ import '../../node_modules/@drewbot/sass-flexbox-grid/public/sass-flexbox/main.c
 
 const Row = ({ children, clazz = '' }) => {
     return (
-        <div className={"row " + clazz}>
+        <div className={"row " + clazz} style={{padding:"0r%", margin:"0%"}}>
             {children}
         </div>
     )
