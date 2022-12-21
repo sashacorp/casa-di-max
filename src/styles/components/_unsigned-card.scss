@@ -7,17 +7,17 @@
     width: 100vw;
     
    h1 {
-    font-size: 4rem;
-    color: #E14D2A;
+    font-size: 5rem;
+    
    }
     p {
-        font-size: 1.5rem; 
+        font-size: 1rem; 
         font-weight: 100;
         color: black;
     }
   
     img {
-        width: 40rem;
+        width: 35rem;
     }
 
     button{
@@ -38,8 +38,8 @@
     }
 
     button:hover {
-        border-color: #E14D2A;
-        color: #E14D2A;
+        border-color: rgba(111,27,27,1);
+        color:  rgba(111,27,27,1);
     }
 
     
@@ -53,21 +53,15 @@
 
 #confidointe {
   
-  img {
-    width: 35rem
-  }
+  
 }
 
 #casadimax {
     
-   img {
-     width: 33rem;
-   }
+   
 }
 
 #sardinienhunde {
-    img {
-        width: 32rem;
-    }
+    
 }
 

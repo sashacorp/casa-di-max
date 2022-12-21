@@ -32,15 +32,14 @@ export function Hero() {
           position: "relative",
           // This centers the other elements inside the hero component
           placeItems: "start center",
-          fontSize: 50,
           display: "grid",
           zIndex: 1,
-          color: "#F5D5AE", 
           fontWeight: 600,
+          fontSize: 20,
         }}
       >
         {/* Any content here will be centered in the component */}
-       Rifugio Casa di Max
+       <h2>Rifugio Casa di Max</h2>
       </div>
     
     </div>
