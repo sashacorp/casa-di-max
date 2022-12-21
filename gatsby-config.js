@@ -49,13 +49,10 @@ module.exports = {
 
       }
     }
-  }, "gatsby-transformer-sharp","gatsby-plugin-image","gatsby-plugin-mdx", "gatsby-plugin-sitemap", {
-    resolve: 'gatsby-plugin-manifest',
-    options: {
-      "icon": "src/images/logocasadimax.svg"
-    }
+  }, "gatsby-transformer-sharp","gatsby-plugin-image","gatsby-plugin-mdx", "gatsby-plugin-sitemap", 'gatsby-plugin-manifest',
+   
     // mdx plugin
-  }, {
+, {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
