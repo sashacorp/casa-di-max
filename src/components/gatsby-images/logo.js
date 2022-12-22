@@ -8,7 +8,7 @@ export function Logo() {
        src="../../images/logomax.png" 
        alt="Logo representing a dog"
        quality="100"
-       width="50"
+       width={50}
        style={{
         imageRendering: "-webkit-optimize-contrast",
        }}
