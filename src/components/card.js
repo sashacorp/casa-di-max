@@ -4,14 +4,14 @@ import Row from './row'
 
 const Card = ({ id, src, title, content }) => {
     return (
-        <Row>
+        
             <div className="unsigned-card" id={id}>
-                <Col>
+                <div className="grid-item-1">
                     <div className="unsigned-card-media">
                         <img alt="design" src={src} />
                     </div>
-                </Col>
-                <Col>
+                </div>
+                <div className="grid-item-2">
                     <div className="unsigned-card-content">
                         <h1>{title}</h1>
                         <p>{content}</p>
@@ -19,9 +19,9 @@ const Card = ({ id, src, title, content }) => {
                             <button> Learn More </button>
                         </div>
                     </div>
-                </Col>
+                </div>
             </div>
-        </Row>
+        
 
     )
 }
