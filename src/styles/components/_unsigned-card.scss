@@ -52,9 +52,7 @@
 }
 
 #max {
-    img {
-        width: 40rem;
-    }
+    
 }
 
 #confidointe {
@@ -77,12 +75,35 @@
        flex-direction: column;
        max-width: 100vw;
 
+       img {
+        width: 500px;
+        margin-top: 5%;
+       }
+
+       h1 {
+        font-size: 2rem;
+       }
+       
+       p {
+        font-size: 10px;
+       }
+
+       button {
+        width: 500px;
+       }
        .grid-item1 {
          place-items: center ;
+         
        }
 
        .grid-item2 {
          place-items: center;
+         
+         .unsigned-card-content {
+            h1 {
+            font-size: 1rem;
+         }
+        } 
        }
 
     }

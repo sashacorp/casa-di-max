@@ -5,12 +5,12 @@ import { StaticImage } from 'gatsby-plugin-image'
 export function Logo() {
 
     return  <StaticImage 
-       src="../../images/logomax.svg" 
+       src="../../images/logocasadimaxmin.png" 
        alt="Logo representing a dog"
        quality="100"
-       width={50}
        style={{
         imageRendering: "-webkit-optimize-contrast",
+        
        }}
     />
 }

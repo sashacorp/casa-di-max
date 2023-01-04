@@ -52,7 +52,7 @@ module.exports = {
   }, "gatsby-transformer-sharp","gatsby-plugin-image","gatsby-plugin-mdx", "gatsby-plugin-sitemap", {
     resolve: 'gatsby-plugin-manifest',
     options: {
-      "icon": "src/images/logomax.png"
+      "icon": "src/images/logocasadimaxmin.png"
     }
     // mdx plugin
   }, {

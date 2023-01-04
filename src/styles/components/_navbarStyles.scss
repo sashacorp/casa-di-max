@@ -1,45 +1,52 @@
 .navigation {
     image-rendering: -webkit-optimize-contrast;
     z-index: 2;
-    top: 0;
     position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    vertical-align: middle;
-    background-color: $background-navbar;
     width: 100%;
-    height: auto;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    .link-logo {
+        opacity: 89%;
+        margin-left: 40%;
+         img {
+            height: 6rem;
+            width: auto; 
+         }
+    
+       }
+    
     ul {
-        
-        list-style-type: none;
-        height: 100%;
         display: flex;
         flex-direction: row;
-        justify-content:center;
-        align-items: center;
-        position: relative;
-
-        li {
-            padding: 10px 10px 1px 1px;
-            cursor: pointer;
-        }
+        justify-content: left;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 30px;
+        margin-right: 3%;
+        padding: 1.5rem 1rem 0.5rem 1rem;
         
-        a, a:focus, a:active {
-            text-decoration: none;
-            color: white;
-            text-transform: capitalize;
-            font-size: 1rem;
-            padding: 5px;
-            font-weight: 100;
-            opacity: 70%;
-       }
-        a:hover {
-            opacity: 100% ;
+        li {
+            list-style-type: none;
+            padding: 0rem 1rem 0rem 1rem;
+           
+            a {
+                color: rgba(36, 89, 122, 1);
+              
+              opacity: 80%;
+              padding: 0.5rem;
+              border-radius: 3%;
+              font-weight: 200;
+            }
+            a:hover {
+             opacity: 100%;
+             
+             
+             
+            }
+           }
             
-        }
-    }
+        
+       }
 }
 
 .toggle {
@@ -48,7 +55,7 @@
 
 .link-logo {
     opacity: 90%;
-    padding: 5px;
+    
 }
 .link-logo:hover {
    opacity: 100%;

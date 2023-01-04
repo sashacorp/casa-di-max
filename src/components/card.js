@@ -1,6 +1,4 @@
 import * as React from 'react'
-import Col from './col'
-import Row from './row'
 
 const Card = ({ id, src, title, content }) => {
     return (

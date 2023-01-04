@@ -14,7 +14,7 @@ export function Hero() {
           zIndex: 1,
           gridArea: "1/1",
           // You can set a maximum height for the image, if you wish.
-          quality: 70,
+          quality: 100,
         }}
          layout="fullWidth"
         // You can optionally force an aspect ratio for the generated image
@@ -39,7 +39,7 @@ export function Hero() {
         }}
       >
         {/* Any content here will be centered in the component */}
-       <h2>Rifugio Casa di Max</h2>
+       
       </div>
     
     </div>
