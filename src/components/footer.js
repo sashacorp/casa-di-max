@@ -1,9 +1,10 @@
 import * as React from 'react'
 import {  useStaticQuery, graphql } from 'gatsby'
 import { FooterImage } from './gatsby-images/footer'
+import ClientTypes from "./clienttypes"
 import '../styles/styles.scss'
 
-const Footer = ({sitetitle}) => {
+function Footer ({sitetitle, width}) {
    const data = useStaticQuery(graphql`
    query {
       site {
@@ -14,7 +15,10 @@ const Footer = ({sitetitle}) => {
    }`)
    return (
       <div className="footer">
-          <FooterImage />   
+         
+            
+            <FooterImage />   
+         
       </div>
    )
        

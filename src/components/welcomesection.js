@@ -8,12 +8,11 @@ function WelcomeSection (props)  {
    
    return (
       <div className="WelcomeSection">
-       {
-         props.width > ClientTypes.Tablet.w &&
+       
          <div className="Media">
            <Hero />
          </div>
-       }
+       
       </div>
    )
 }
