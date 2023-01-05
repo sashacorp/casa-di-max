@@ -1,21 +1,21 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
+
+import LogoContent from "../logocontent"
 
 export function FooterImage() {
   return (
-    <div style={{ display: "grid", width: "100vw", bottom: 0}}>
+    <div style={{ display: "grid"}}>
       {/* You can use a GatsbyImage component if the image is dynamic */}
       <StaticImage
         loading= "eager"
         quality= "100"
-        fit= "contain"
-        placeholder = "none"
+        
         style={{
           zIndex: -1,
           gridArea: "1/1",
           // You can set a maximum height for the image, if you wish.
-          quality: 100,
+          
           width: "100%",
         }}
          layout="fullWidth"
@@ -27,10 +27,21 @@ export function FooterImage() {
         src="../../images/backgroundfooter.png"
         formats={["auto", "webp", "avif", "jpg"]}
       />
-     <div>
-      
-     </div>
-      
+     
+     <div
+        style={{
+          // By using the same grid area for both, they are stacked on top of each other
+          gridArea: "1/1",
+          position: "relative",
+          // This centers the other elements inside the hero component
+          placeItems: " center start",
+          width: "30%",
+          display: "grid",
+        }}
+      >
+        {/* Any content here will be centered in the component */}
+        <LogoContent />
+      </div>
         
       
     </div>

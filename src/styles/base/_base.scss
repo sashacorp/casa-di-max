@@ -49,9 +49,9 @@ main {
 
 @media screen and (max-width: 768px) {
     body {
-        max-width: viewport(viewport-length);
+        max-width: 768px;
     }
     main {
-        max-width: viewport(viewport-length);
+        max-width: 768px;
     }
 }

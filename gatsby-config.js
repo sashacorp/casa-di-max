@@ -19,8 +19,10 @@ module.exports = {
   siteMetadata: {
     // Domain
     title: `Casa Di Max`,
-    siteUrl: `https://www.yourdomain.tld`,
-    admin: `SashaCorp`
+    siteUrl: `https://www.casadimax.org`,
+    admin: `SashaCorp`,
+    sardinienhunde: `https://www.sardinienhunde.org`,
+    adminUrl: `https://www.sashacorp.dev`,
   },
    // CMS
    // SASS

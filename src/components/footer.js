@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {  useStaticQuery, graphql } from 'gatsby'
 import { FooterImage } from './gatsby-images/footer'
-import ClientTypes from "./clienttypes"
+
 import '../styles/styles.scss'
 
 function Footer ({sitetitle, width}) {
@@ -16,7 +16,7 @@ function Footer ({sitetitle, width}) {
    return (
       <div className="footer">
          
-            
+            <p>powered by <a href="https://www.sashacorp.dev">{data.site.siteMetadata.admin}</a></p>
             <FooterImage />   
          
       </div>
