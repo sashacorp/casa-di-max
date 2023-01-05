@@ -67,11 +67,14 @@
     .navigation {
         flex-direction: column;
         width: 100%;
+        img {
+            width: 20px;
+        }
         ul {
             flex-direction: column;
             justify-content: end;
             height: 100%;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.6);
             
 
             li:nth-child(1) {
@@ -83,7 +86,7 @@
                 margin: 0px;
                 padding: 20px 0px 0px 0px;
                 a {
-                    color: green;
+                    color: rgba(36, 89, 122, 1);
                 }
             }
             li:nth-child(7) {
@@ -109,7 +112,7 @@
                 justify-content: end;
                 border: none;
                 background: none;
-                color:white;
+                color: rgba(36, 89, 122, 1);
                 cursor: pointer;
                 
             }

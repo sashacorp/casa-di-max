@@ -2,6 +2,7 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 export function Hero() {
+  
   return (
     <div style={{ display: "grid", width:"100vw"}}>
       {/* You can use a GatsbyImage component if the image is dynamic */}

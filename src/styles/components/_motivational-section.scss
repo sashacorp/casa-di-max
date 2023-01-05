@@ -1,8 +1,8 @@
 .motivational-section {
-    display: grid;
-    grid-area: 1/1;
-    place-items: center center;
+    display: flex;
+    flex-direction: column;
     height: 100vh;
+    
 
     .content{
         display: flex;
@@ -10,15 +10,15 @@
         align-items: center;
     }
      h1 {
-       font-size: 5rem;
+       font-size: 4rem;
      }
     button{
         padding: 1rem;
         border: 0.2rem;
-        border-style: solid;
+        border-style: 1px solid rgba(255, 255, 255, 0.2);
         background:  repeating-radial-gradient( circle 263px at 30.2% 3%,  #285430 31.1%, rgba(205,181,93,1) 16.4%, rgba(244,102,90,1) 50.9%, rgba(199,206,187,1) 48.7%, rgba(249,140,69,1) 62.5%, #285430 72.6% );
         border-radius: 30px;
-        color: white;
+        color: rgba(255, 255, 255, 0.2);
         margin-right: 1.4rem;  
         font-size: 1rem;
         text-transform: uppercase;
@@ -40,5 +40,11 @@
         a {
             color:  rgba(111,27,27,1);
         }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1rem;
     }
 }

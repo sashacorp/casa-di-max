@@ -25,8 +25,9 @@
 
 @media screen and (max-width: 768px) {
     .WelcomeSection {
-        height: 50vh;
-        max-width: 768px;
+       img {
+        display: hide;
+       }
 
     }
 }
