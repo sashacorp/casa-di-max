@@ -9,6 +9,22 @@ const Logos = () => {
         <div className="logos" >
             <table>
                 <tbody>
+                <tr key="caption-social">
+                        <td>
+                           <h2>Contatti</h2>
+                        </td>      
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="https://www.facebook.com/casadimaxarzana" alt="facebook link">Facebook</a>
+                        </td>
+                        <td>
+                            <a href="https://www.instagram.com/onlusconfidointe/" alt="instagram link">Instagram</a>
+                        </td>
+                        <td>
+                            <a href="mailto:barbarapistis@gmail.com" alt="email">Mail</a>
+                        </td>
+                    </tr>
                     <tr key="caption-amici">
                         <td>
                           <h2>Tra amici</h2>
@@ -25,22 +41,7 @@ const Logos = () => {
                              <a href="https://www.sashacorp.dev" alt="sashacorp link and logo"><SCLogo/></a>
                          </td>
                     </tr>
-                    <tr key="caption-social">
-                        <td>
-                           <h2>Contatti</h2>
-                        </td>      
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="https://www.facebook.com/casadimaxarzana" alt="facebook link">Facebook</a>
-                        </td>
-                        <td>
-                            <a href="https://www.instagram.com/onlusconfidointe/" alt="instagram link">Instagram</a>
-                        </td>
-                        <td>
-                            <a href="mailto:barbarapistis@gmail.com" alt="email">Mail</a>
-                        </td>
-                    </tr>
+                    
                 </tbody>
             </table>
               

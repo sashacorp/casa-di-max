@@ -16,7 +16,6 @@ function Footer ({sitetitle, width}) {
    return (
       <div className="footer">
          
-            <p>powered by <a href="https://www.sashacorp.dev">{data.site.siteMetadata.admin}</a></p>
             <FooterImage />   
          
       </div>
