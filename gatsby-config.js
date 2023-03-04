@@ -31,7 +31,28 @@ module.exports = {
   {
     resolve: `gatsby-plugin-netlify`,
     options: {
-      headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
+      headers: {
+        "/**/*.html": [
+          "cache-control: public",
+          "cache-control: max-age=0",
+          "cache-control: must-revalidate",
+        ],
+        "/page-data/*.json": [
+          "cache-control: public",
+          "cache-control: max-age=0",
+          "cache-control: must-revalidate",
+        ],
+        "/app-data.json": [
+          "cache-control: public",
+          "cache-control: max-age=0",
+          "cache-control: must-revalidate",
+        ],
+        "/static/*": [
+          "cache-control: public",
+          "cache-control: max-age=31536000",
+          "cache-control: immutable",
+        ],
+      }, // option to add more headers. `Link` headers are transformed by the below criteria
       allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
       mergeSecurityHeaders: true, // boolean to turn off the default security headers
       mergeCachingHeaders: true, // boolean to turn off the default caching headers
