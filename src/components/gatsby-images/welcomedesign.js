@@ -26,24 +26,7 @@ export function Hero() {
         src="../../images/casadimaxLanding.jpg"
         formats={["auto", "webp", "avif", "jpg"]}
       />
-      <div
-        style={{
-          // By using the same grid area for both, they are stacked on top of each other
-          gridArea: "1/1",
-          position: "relative",
-          // This centers the other elements inside the hero component
-          placeItems: "center start",
-          display: "grid",
-          zIndex: 1,
-          fontWeight: 600,
-          fontSize: 80,
-          
-          
-        }}
-      >
-        {/* Any content here will be centered in the component */}
-       
-      </div>
+      
     
     </div>
   )
