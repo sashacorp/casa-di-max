@@ -2,8 +2,8 @@ import React from "react"
 import { graphql} from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import { Link } from "gatsby"
-import  Layout  from "../components/layout"
-import '../styles/styles.scss'
+import Layout from "../components/ui/layout"
+
 
 const shortcodes = { Link, Layout } // Provide common components here
 

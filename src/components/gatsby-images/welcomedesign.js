@@ -42,7 +42,7 @@ export function Hero() {
         }}
       >
         {/* Any content here will be centered in the component */}
-       Rifugio la Casa di Max 
+       
       </div>
     
     </div>

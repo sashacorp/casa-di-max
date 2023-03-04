@@ -1,7 +1,7 @@
 import * as React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/ui/layout"
 import { graphql, Link } from "gatsby"
-import '../styles/styles.scss'
+
 
 
 const Blog = ({ data }) => {
