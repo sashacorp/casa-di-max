@@ -29,6 +29,14 @@ module.exports = {
    // SASS
   plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-sass",
   {
+    resolve: 'gatsby-plugin-web-font-loader',
+    options: {
+      google: {
+        families: ['Climate Crisis:i7:latin', 'Rufina:n6:n5:n4:n3:latin']
+      }
+    }
+  },
+  {
     resolve: `gatsby-plugin-netlify`,
     options: {
       headers: {
