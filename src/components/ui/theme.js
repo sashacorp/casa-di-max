@@ -11,8 +11,9 @@ const grey = "rgba(0, 7, 1, 0.7)"
 const lightGrey = "rgba(173, 170, 170, 1)"
 const darkRed = "rgba(63, 2, 2, 0.7)"
 const red = "rgba(186, 12, 12, 1)"
-const gradient= `repeating-radial-gradient( circle 263px at 30.2% 3%,  #285430 31.1%, rgba(205,181,93,1) 16.4%, rgba(244,102,90,1) 50.9%, rgba(199,206,187,1) 48.7%, rgba(249,140,69,1) 62.5%, #285430 72.6% );`
-const gradientSecond= `radial-gradient(circle, rgba(53,164,66,1) 0%, rgba(54,88,64,1) 100%);`
+const gradient= `repeating-radial-gradient( circle 263px at 30.2% 3%,  #285430 31.1%, rgba(205,181,93,1) 16.4%, rgba(244,102,90,1) 50.9%, rgba(199,206,187,1) 48.7%, rgba(249,140,69,1) 62.5%, #285430 72.6% )`
+const gradientSecond= `radial-gradient(circle, rgba(53,164,66,1) 0%, rgba(54,88,64,1) 100%)`
+const gradientThird = 'radial-gradient(circle, rgba(205,146,241,1) 0%, rgba(164,89,209,1) 100%)'
 
 const theme = createTheme({
     palette: {
@@ -34,7 +35,8 @@ const theme = createTheme({
            yellow,
            gradientSecond,
            xLightGreen,
-           offWhite
+           offWhite,
+           gradientThird
         }
     },
     typography: {
@@ -59,10 +61,9 @@ const theme = createTheme({
         },
         h4: {
             fontFamily: "Rufina",
-            fontStyle: "italic",
             fontWeight: 700,
-            fontSize: "3rem",
-            color: "#ffffff"
+            fontSize: "2rem",
+            color: lightGreen
         },
         h5: {
              fontFamily: "Rufina",
@@ -73,7 +74,7 @@ const theme = createTheme({
         },
         body: {
             fontFamily: "Rufina",
-            fontSize: "1.5rem",
+            fontSize: "3rem",
             color: grey,
            },
            body2: {
