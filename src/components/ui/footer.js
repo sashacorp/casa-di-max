@@ -41,14 +41,14 @@ export default function Footer() {
     const classes = useStyles()
 
     const socialMedia = [
-      {icon: facebook, alt:'facebook', link:'https://facebook.com'},
-      {icon: twitter, alt:'twitter', link:'https://twitter.com'},
-      {icon: instagram, alt:'instagram', link:'https://instagram.com'}
+      {icon: facebook, alt:'facebook', link:'https://www.facebook.com/casadimaxarzana'},
+      // {icon: twitter, alt:'twitter', link:'https://twitter.com'},
+      {icon: instagram, alt:'instagram', link:'https://www.instagram.com/casadimaxarzana/'}
    ]
 
    const routes = {
-      "Contact Us": [{label: "(333) 333-3333", href: 'tel:(333) 333-3333'}, {label: "sasha@sashacorp.dev", href:"mailto:sasha@sashacorp.dev"}],
-      "Customer Service": [{label: 'Contact Us', link:'/contact'}, {label: 'My Account', link:'/account'}],
+      "Contact Us": [{label: "Chiama", href: 'tel:(+39) 328 393 4768'}, {label: "Scrivici", href:"mailto:barbarapistis@gmail.com"}],
+      "Customer Service": [{label: 'Contact Us', link:'/contact'}],
       "Information": [{label: 'Privacy Policy', link:'/privacy-policy'}, {label: 'Terms and Conditions', link:'/terms-conditions'}]
    }
 

@@ -12,8 +12,27 @@ import Arzana from '../../images/arzana.png'
 import SardinienHunde from '../../images/sardinienhunde.png'
 
 const useStyles = makeStyles(theme => ({
-    
+    mainContainer: {
+      padding: '1rem',
+      backgroundColor: theme.palette.primary.main
+    },
+    welcomeContainer:{
+       marginTop: '3rem',
+    },
+    welcomeText:{
+        color: theme.palette.common.offWhite,
+        [theme.breakpoints.down('md')]: {
+           fontSize: '3rem'
+        },
+        [theme.breakpoints.down('sm')]: {
+            fontSize: '2rem'
+         },
+    },
+    span:{
+      color: theme.palette.common.yellow
+    },
     contentContainer: {
+       
        padding: '5rem 0.5rem', 
        
     },
@@ -37,14 +56,23 @@ const useStyles = makeStyles(theme => ({
     },
     descriptionContainer: {
         width: '50rem',
-        padding: '3rem 3rem 3rem 3rem',
+        height: '25rem',
+        padding: '2rem 2rem 2rem 2rem',
+        margin: '3rem',
         maxWidth: '35rem',
+        backgroundColor: '#fff',
+        boxShadow: theme.shadows[5],
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
        
         [theme.breakpoints.down('sm')]: {
-            maxWidth: '30rem'
+            maxWidth: '30rem',    
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '20rem'
+            maxWidth: '20rem',
+            height: '30rem'
+            
         },
         hCorrection: {
             [theme.breakpoints.down('sm')]: {
@@ -61,10 +89,10 @@ export default function AboutUsSection(){
     const matchesMD = useMediaQuery(theme => theme.breakpoints.down('md'))
 
     //const maxSection = "Il nostro rifugio deve il suo nome a Max, un cagnolino che qualche anno fa era stato affidato alla nostra presidentessa Barbara Pistis affinché' se ne prendesse cura, poiché' i suoi vecchi proprietari non avevano più' la possibilità' di dedicargli le dovute attenzioni. Purtroppo pero', un giorno Max è scomparso e da allora non è più' stato ritrovato."
-    const maxSection = "Benvenuti al rifugio Casa Di Max!"
-    const onlusSection = "Con l'obiettivo di avere un impatto positivo sulla vita di tanti cani e gatti che come Max hanno un disperato bisogno di una nuova casa, nel 20?? Barbara ha fondato la ONLUS ConFidointe, che si occupa di riscattare cani e gatti dai rifugi spagnoli, in cui verrebbero altrimenti soppressi dopo 10 giorni di permanenza."
-    const casaDiMaxSection =" Il rifugio Casa di Max, aperto nel 20??, rappresenta il secondo grande progetto di salvaguardia di cani e gatti randagi a opera di Barbara. Oggi il rifugio costituisce la dimora sicura di oltre 150 animali tra cani e gatti. Si trova immerso nella natura incontaminata delle campagne di Arzana, un comune della provincia di Nuoro arroccato sulle montagne del territorio ogliastrino. In un simile territorio, caratterizzato da inverni molto rigidi ed estati afose, l'opera di Casa di Max è essenziale per garantire la sopravvivenza di tanti animali che si troverebbero altrimenti esposti a situazioni di estrema vulnerabilità."
-    const sardinienHunde = "Collaboriamo inoltre con la Onlus tedesca SardinienHunde e.V., fondata a Regensburg nel 2015, che si occupa di protezione e cura di cani nell'entroterra sardo."
+    const maxSection = "Max è stato un cagnolino molto speciale, tanto da averci spinto a fondare un rifugio in sua memoria!"
+    const onlusSection = "Barbara Pistis ha fondato la Onlus ConFidointe a tutela dei pet meno fortunati d'Europa."
+    const casaDiMaxSection ="Il rifugio Casa di Max è una struttura attiva nelle campagne ogliastrine, in Sardegna."
+    const sardinienHunde = "Tra i nostri amici contiamo la Onlus SardinienHunde, che da anni si impegna per la cura e la protezione dei cagnolini della Sardegna."
             
     const sections = [
         {
@@ -90,7 +118,12 @@ export default function AboutUsSection(){
     ]
 
     return(
-        <Grid container direction="column">
+        <Grid container direction="column" classes={{root: classes.mainContainer}} alignItems="center">
+          <Grid item classes={{root: classes.welcomeContainer}}>
+            <Typography variant="h1" classes={{root: classes.welcomeText}}>
+               Benvenuti al rifugio <span className={classes.span}>Casa di Max!</span>
+            </Typography>
+          </Grid>
           <Grid item>
             {sections.map(({title, media, content}) => (
                 <Grid item container 
