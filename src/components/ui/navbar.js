@@ -58,10 +58,13 @@ const useStyles = makeStyles(theme => ({
         }
     },
     drawer: {
-        backgroundColor: theme.palette.secondary.main
+        backgroundColor: theme.palette.common.offWhite,
+        padding: '1rem 3rem 0 3rem'
     },
     listItemText: {
-        color: theme.palette.common.yellow
+        color: theme.palette.primary.main,
+        fontWeight: 400,
+        fontSize: '1.3rem'
     },
     tab: {
         ...theme.typography.body1,

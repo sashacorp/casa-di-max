@@ -14,7 +14,11 @@ import SardinienHunde from '../../images/sardinienhunde.png'
 const useStyles = makeStyles(theme => ({
     mainContainer: {
       padding: '1rem',
-      backgroundColor: theme.palette.primary.main
+      backgroundColor: theme.palette.primary.main,
+      [theme.breakpoints.down('md')]:
+      {
+        padding: '1rem 0rem 0rem 0rem'
+      },
     },
     welcomeContainer:{
        marginTop: '3rem',
@@ -25,7 +29,7 @@ const useStyles = makeStyles(theme => ({
            fontSize: '3rem'
         },
         [theme.breakpoints.down('sm')]: {
-            fontSize: '2rem'
+            fontSize: '1.5rem'
          },
     },
     span:{
@@ -34,6 +38,9 @@ const useStyles = makeStyles(theme => ({
     contentContainer: {
        
        padding: '5rem 0.5rem', 
+       [theme.breakpoints.down('md')]: {
+        padding: '1rem 0'
+       }
        
     },
     mediaStyle: {
@@ -56,7 +63,7 @@ const useStyles = makeStyles(theme => ({
     },
     descriptionContainer: {
         width: '50rem',
-        height: '25rem',
+        
         padding: '2rem 2rem 2rem 2rem',
         margin: '3rem',
         maxWidth: '35rem',
@@ -67,16 +74,21 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
        
         [theme.breakpoints.down('sm')]: {
-            maxWidth: '30rem',    
+            maxWidth: '20rem',    
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '20rem',
-            height: '35rem'
+            maxWidth: '15rem',
             
+            
+        },
+        titleText: {
+            [theme.breakpoints.down('sm')]: {
+                fontSize: '1.5rem'
+            },
         },
         hCorrection: {
             [theme.breakpoints.down('sm')]: {
-                fontSize: '1.5rem'
+                fontSize: '0.8rem'
             },
         }
 
@@ -92,7 +104,7 @@ export default function AboutUsSection(){
     const maxSection = "Max è stato un cagnolino molto speciale, tanto da averci spinto a fondare un rifugio in sua memoria!"
     const onlusSection = "Barbara Pistis ha fondato la Onlus ConFidointe a tutela dei pet meno fortunati d'Europa."
     const casaDiMaxSection ="Il rifugio Casa di Max è una struttura attiva nelle campagne ogliastrine, in Sardegna."
-    const sardinienHunde = "Tra i nostri amici contiamo la Onlus SardinienHunde, che da anni si impegna per la cura e la protezione dei cagnolini della Sardegna."
+    const sardinienHunde = "Tra i nostri amici contiamo la Onlus Sardinien Hunde, che da anni si impegna per la cura e la protezione dei cagnolini della Sardegna."
             
     const sections = [
         {
@@ -136,7 +148,7 @@ export default function AboutUsSection(){
                 <Grid item classes={{root: classes.descriptionContainer}}>
                     <Grid item container direction="column" justifyContent="center">
                         <Grid item>
-                            <Typography variant="h1">
+                            <Typography variant="h1" classes={{root: classes.titleText}}>
                                 {title}
                             </Typography>
                         </Grid>

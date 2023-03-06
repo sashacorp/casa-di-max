@@ -226,6 +226,7 @@ const ContactPage = () => {
   const disabled = Object.keys(errors).some(error=> errors[error] === true) || Object.keys(errors).length !== 4
   return (
     <Layout>
+
       <Grid 
       container 
       direction={matchesMD ? "column" : "row"}
