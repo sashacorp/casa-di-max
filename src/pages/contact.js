@@ -71,6 +71,7 @@ const useStyles = makeStyles(theme =>  ({
    },
    contactText: {
     fontSize: '2.2rem',
+    color: '#fff',
     [theme.breakpoints.down('xs')]: {
       fontSize: '1.8rem'
     }
@@ -162,7 +163,7 @@ const useStyles = makeStyles(theme =>  ({
 
 const ContactPage = () => {
   const classes = useStyles()
-  
+  const theme = useTheme()
   const matchesMD = useMediaQuery(theme => theme.breakpoints.down('md'))
   const matchesXS = useMediaQuery(theme => theme.breakpoints.down('xs'))
 
@@ -205,17 +206,17 @@ const ContactPage = () => {
   }
 
   const info = [{
-    label: <span>1234 S Example St {matchesXS ? <br /> : null}Wichita, KS 67111 </span>,
+    label: <span>Via Repubblica, {matchesXS ? <br /> : null} 89 Lanusei</span>,
      icon: (<img src={address} alt="address" className={classes.contactIcon}/>),
   },
    {
-    label: "(+39)3456127252",
+    label: "(+39)3283934768",
     icon: (<div className={classes.contactIcon}>
       <PhoneAdornment color="#fff"/>
       </div>),
    },
    {
-    label: "info@sashacorp.dev",
+    label: "barbarapistis@gmail.com",
     icon: (<div className={classes.contactIcon}>
       <Email color="#fff"/>
      </div>)

@@ -45,7 +45,7 @@ const useStyles = makeStyles(theme => ({
    
     tabs: {
         marginLeft: 'auto',
-        marginRight: 'auto'
+        marginRight: 0
     },
     icon: {
         height: "2.5rem",
@@ -85,9 +85,9 @@ function NavBar() {
     ]
 
     const actions = [
-        {icon: search, alt: "string", visible: true, onClick: () => console.log("search")}, 
-        {icon: cat, alt: "cats", visible: true, link: "/cats"},
-        {icon: dog, alt: "dogs", visible: !matchesMD, link: "/dogs"},
+        //{icon: search, alt: "string", visible: true, onClick: () => console.log("search")}, 
+        //{icon: cat, alt: "cats", visible: true, link: "/cats"},
+        //{icon: dog, alt: "dogs", visible: !matchesMD, link: "/dogs"},
         {icon: menu, alt: 'menu', visible: matchesMD, onClick: () => setDrawerOpen(true)}
         ]
 

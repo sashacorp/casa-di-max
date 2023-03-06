@@ -71,7 +71,7 @@ const useStyles = makeStyles(theme => ({
         },
         [theme.breakpoints.down('xs')]: {
             maxWidth: '20rem',
-            height: '30rem'
+            height: '35rem'
             
         },
         hCorrection: {
