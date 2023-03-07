@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
-import cloud from '../../images/cloud.png'
+import cloud from '../../images/cloud1.png'
 import earth from '../../images/earth.png'
 import littleDog from '../../images/littledog.png'
 // import Max from '../../images/max.png'
