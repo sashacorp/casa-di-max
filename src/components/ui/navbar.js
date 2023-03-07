@@ -84,6 +84,7 @@ function NavBar() {
     // Data
     const routes = [
         {node: {name: 'Come Contattarci', link: '/contact'}},
+        {node: {name: 'I nostri cani', link:'/dogs'}}
         //{node: {name: 'About Us', link: '/aboutus'}}
     ]
 
