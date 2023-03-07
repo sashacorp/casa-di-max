@@ -42,13 +42,13 @@ const theme = createTheme({
     typography: {
         h1: {
             fontSize : "4.5rem",
-            fontFamily: 'Climate Crisis, cursive',
+            fontFamily: 'Climate Crisis',
             fontStyle: "italic",
             fontWeight: 700,
             color: green,
         },
         h2: {
-            fontFamily:  'Climate Crisis, cursive',
+            fontFamily:  'Climate Crisis',
             fontSize: "3rem",
             fontWeight: 600,
             color: offWhite
