@@ -207,8 +207,8 @@ export default function Animation() {
         </ParallaxLayer> 
 
          <ParallaxLayer
-          offset={4.8}
-          speed={-0.1}
+          offset={5.6}
+          speed={-0.3}
           style={{
             display: 'flex',
             alignItems: 'center',
