@@ -7,7 +7,7 @@ import Footer from "./footer"
 const useStyles = makeStyles(theme => ({
   spacer: {
     height: '2px',
-    background: theme.palette.common.gradient
+    // background: theme.palette.common.gradient
   },
 }))
 

@@ -1,14 +1,22 @@
 import * as React from "react"
 import Layout from "../components/ui/layout"
-import { Link, graphql } from "gatsby"
+import {graphql } from "gatsby"
+import Animation from "../components/home/Animation"
+import Grid from '@material-ui/core/Grid'
+import { makeStyles } from "@material-ui/core/styles"
 
+const useStyles = makeStyles(theme => ({
+  mainContainer: {
+    height: '50rem'
+  }
+}))
 
 
 const Dogs = ({ data }) => {
-  
+  const classes = useStyles()
   return (
     <Layout>
-      <div className="dogs">
+      {/* <div className="dogs">
         <h1>Dogs</h1>
         <ul>
           {data.allMdx.edges.map(({ node }) => (
@@ -17,7 +25,11 @@ const Dogs = ({ data }) => {
             </li>
           ))}
        </ul>
-      </div>
+      </div> */}
+      <Grid container classes={{root: classes.mainContainer}}>
+      <Animation />
+      </Grid>
+      
     </Layout>
   )
 }

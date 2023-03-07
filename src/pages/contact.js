@@ -163,7 +163,7 @@ const useStyles = makeStyles(theme =>  ({
 
 const ContactPage = () => {
   const classes = useStyles()
-  const theme = useTheme()
+  
   const matchesMD = useMediaQuery(theme => theme.breakpoints.down('md'))
   const matchesXS = useMediaQuery(theme => theme.breakpoints.down('xs'))
 

@@ -90,7 +90,7 @@ function NavBar() {
     const actions = [
         //{icon: search, alt: "string", visible: true, onClick: () => console.log("search")}, 
         //{icon: cat, alt: "cats", visible: true, link: "/cats"},
-        //{icon: dog, alt: "dogs", visible: !matchesMD, link: "/dogs"},
+        {icon: dog, alt: "dogs", visible: !matchesMD, link: "/dogs"},
         {icon: menu, alt: 'menu', visible: matchesMD, onClick: () => setDrawerOpen(true)}
         ]
 
