@@ -22,6 +22,9 @@ const useStyles = makeStyles(theme => ({
     },
     welcomeContainer:{
        marginTop: '3rem',
+       display: 'flex',
+       flexDirection: "center",
+       alignItems: 'center'
     },
     welcomeText:{
         color: theme.palette.common.offWhite,
@@ -49,6 +52,7 @@ const useStyles = makeStyles(theme => ({
     mediaItemStyle: {
         width: '40rem',
         maxWidth: '50rem',
+        
         [theme.breakpoints.down('sm')]: {
             maxWidth: '30rem',
             
@@ -60,7 +64,8 @@ const useStyles = makeStyles(theme => ({
     },
     descriptionContainer: {
         width: '50rem',
-        
+        border: `10px solid ${theme.palette.common.lightGreen}`,
+        borderBottom: `10px solid ${theme.palette.common.yellow}`,
         padding: '2rem 2rem 2rem 2rem',
         margin: '3rem',
         maxWidth: '35rem',
@@ -71,7 +76,8 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
        
         [theme.breakpoints.down('sm')]: {
-            maxWidth: '20rem',    
+            maxWidth: '20rem',   
+            padding: '1rem' 
         },
         [theme.breakpoints.down('xs')]: {
             maxWidth: '15rem',
