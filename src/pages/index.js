@@ -4,12 +4,20 @@ import Layout from "../components/ui/layout"
 import WelcomeSection from "../components/welcomesection"
 import AboutUsSection from "../components/home/AboutUsSection"
 import { makeStyles } from "@material-ui/core/styles"
+import Animation from "../components/home/Animation"
+import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles(theme => ({
   spacer: {
-    height: '2px',
-    background: theme.palette.common.gradient
-  }
+    
+    height: '1rem',
+    backgroundColor: theme.palette.primary.main
+  },
+  mainContainer: {
+    height: '50rem'
+  },
+  
+  
 }))
 
 
@@ -20,8 +28,11 @@ function IndexPage() {
 const classes = useStyles()
   return (
     <Layout>
-       <WelcomeSection/>
+        <Grid container classes={{root: classes.mainContainer}}>
+      <Animation />
+      </Grid>
        <div className={classes.spacer}/>
+
       <AboutUsSection />
       
        

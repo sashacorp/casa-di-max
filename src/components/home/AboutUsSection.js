@@ -65,11 +65,12 @@ const useStyles = makeStyles(theme => ({
     },
     descriptionContainer: {
         width: '50rem',
+        border: `5px solid ${theme.palette.common.yellow}`,
         borderBottom: `40px solid ${theme.palette.common.yellow}`,
         padding: '2rem 2rem 2rem 2rem',
         margin: '3rem',
         maxWidth: '35rem',
-        backgroundColor: '#fff',
+        backgroundColor: theme.palette.primary.main,
         boxShadow: theme.shadows[5],
         display: 'flex',
         flexDirection: 'column',
@@ -85,8 +86,10 @@ const useStyles = makeStyles(theme => ({
             
             
         },
-        
-
+        sectionTitle:{
+            color: '#fff'
+        }
+      
     }
 
 }))
@@ -97,30 +100,30 @@ export default function AboutUsSection(){
     const matchesXS = useMediaQuery(theme => theme.breakpoints.down('xs'))
 
     //const maxSection = "Il nostro rifugio deve il suo nome a Max, un cagnolino che qualche anno fa era stato affidato alla nostra presidentessa Barbara Pistis affinché' se ne prendesse cura, poiché' i suoi vecchi proprietari non avevano più' la possibilità' di dedicargli le dovute attenzioni. Purtroppo pero', un giorno Max è scomparso e da allora non è più' stato ritrovato."
-    const maxSection = "Max è stato un cagnolino molto speciale, tanto da averci ispirato a fondare un rifugio in sua memoria!"
-    const onlusSection = "Barbara Pistis ha istituito la Onlus ConFidointe a tutela dei pet meno fortunati d'Europa."
-    const casaDiMaxSection ="Il rifugio Casa di Max è una struttura attiva nelle campagne ogliastrine, in Sardegna."
-    const sardinienHunde = "Tra i nostri amici contiamo la Onlus Sardinien Hunde, che da anni si impegna per la cura e la protezione dei cagnolini della Sardegna."
+    const maxSection = "Abbiamo più di centocinquanta cagnolini in cerca di una famiglia."
+    const onlusSection = "Partecipa a una raccolta fondi o visita il nostro store online."
+    const casaDiMaxSection ="Il modo migliore per rimanere aggiornati sulla vita alla Casa di Max è senza dubbio seguirci su Instagram e Facebook"
+    const sardinienHunde = "Scopri come raggiungere il rifugio."
             
     const sections = [
         {
-            title: <span>Max</span>,
+            title:"Incontra i nostri cuccioli:",
             media: Max,
             content: maxSection,
         },
         { 
-            title: <span>Onlus</span>,
+            title: "Come aiutare:",
             media: Onlus,
             content: onlusSection
         },
         {
-            title: <span>Casa di Max</span>,
-            media: Arzana,
+            title: "I nostri social:",
+            media: SardinienHunde,
             content: casaDiMaxSection
         },
         {
-            title: <span>Sardinien {isBrowser && matchesXS ? <br /> : null} Hunde</span>,
-            media: SardinienHunde,
+            title: "Vienici a trovare!",
+            media: Arzana,
             content: sardinienHunde
         }
     ]
@@ -129,7 +132,7 @@ export default function AboutUsSection(){
         <Grid container direction="column" classes={{root: classes.mainContainer}} alignItems="center">
           <Grid item classes={{root: classes.welcomeContainer}}>
             <Typography variant="h1" classes={{root: classes.welcomeText}}>
-               Benvenuti al rifugio <span className={classes.span}>  {isBrowser && matchesXS ? <br /> : null} Casa di Max!</span>
+               Unisciti  agli amici della <span className={classes.span}>  {isBrowser && matchesXS ? <br /> : null} Casa di Max!</span>
             </Typography>
           </Grid>
           <Grid item>
@@ -144,7 +147,7 @@ export default function AboutUsSection(){
                 <Grid item classes={{root: classes.descriptionContainer}}>
                     <Grid item container direction="column" justifyContent="center">
                         <Grid item>
-                            <Typography variant={isBrowser && matchesXS ? "h4": "h1"} >
+                            <Typography variant={isBrowser && matchesXS ? "h4": "h1"}>
                                 {title}
                             </Typography>
                         </Grid>

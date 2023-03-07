@@ -45,7 +45,7 @@ const theme = createTheme({
             fontFamily: 'Climate Crisis',
             fontStyle: "italic",
             fontWeight: 700,
-            color: green,
+            color: '#fff',
         },
         h2: {
             fontFamily:  'Climate Crisis',
@@ -63,7 +63,7 @@ const theme = createTheme({
             fontFamily: 'Climate Crisis, cursive',
             fontWeight: 900,
             fontSize: "3rem",
-            color: green
+            color: '#fff'
         },
         h5: {
              fontFamily: "Rufina",

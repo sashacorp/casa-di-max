@@ -2,7 +2,8 @@ import React, { useRef } from 'react'
 import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
 import cloud from '../../images/cloud1.png'
 import earth from '../../images/earth.png'
-import littleDog from '../../images/littledog.png'
+import littleDog from '../../images/dognaut.png'
+import backgroundClouds from '../../images/backgroundClouds.png'
 // import Max from '../../images/max.png'
 // import Onlus from '../../images/onlus.png'
 // import Arzana from '../../images/arzana.png'
@@ -11,6 +12,7 @@ import { Typography } from '@material-ui/core'
 // import { Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
 import { useMediaQuery } from '@mui/material'
+
 
 const useStyles = makeStyles(theme => ({
    responsiveText: {
@@ -25,7 +27,7 @@ const useStyles = makeStyles(theme => ({
     },
    },
    responsiveImage: {
-    width: '20%',
+    width: '50%',
     [theme.breakpoints.down('md')]: {
       width: '30%'
     },
@@ -65,14 +67,13 @@ export default function Animation() {
   
   return (
     <div style={{ width: '100%', height: '100%', background: '#253237' }}>
-      <Parallax ref={parallax} pages={6}>
+      <Parallax ref={parallax} pages={8}>
         <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: '#253237' }} />
         <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#253237' }} />
-
         <ParallaxLayer
           offset={0}
           speed={0}
-          factor={6}
+          factor={7}
           style={{
             backgroundImage: url('stars', true),
             backgroundSize: 'cover',
@@ -83,7 +84,7 @@ export default function Animation() {
           <img src={url('satellite4')} style={{ width: '15%', marginLeft: '80%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.8} style={{ opacity: 0.1 }}>
+        <ParallaxLayer offset={2} speed={0.8} style={{ opacity: 0.1 }}>
           <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
           <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
         </ParallaxLayer>
@@ -127,15 +128,6 @@ export default function Animation() {
           <img src={earth} className={classes.responsiveEarth} />
         </ParallaxLayer>
 
-        {/* <ParallaxLayer
-          offset={2}
-          speed={-0.3}
-          style={{
-            backgroundSize: '80%',
-            backgroundPosition: 'center',
-            backgroundImage: `url(${Max})`,
-          }}
-        /> */}
 
         <ParallaxLayer
           offset={0}
@@ -215,7 +207,7 @@ export default function Animation() {
         </ParallaxLayer> 
 
          <ParallaxLayer
-          offset={5.2}
+          offset={4.8}
           speed={-0}
           style={{
             display: 'flex',
@@ -225,6 +217,17 @@ export default function Animation() {
           onClick={() => parallax.current.scrollTo(3)}>
           <img src={littleDog} className={classes.responsiveImage} />
         </ParallaxLayer> 
+
+        <ParallaxLayer
+          offset={6.5}
+          speed={-0.3}
+          style={{
+            backgroundSize: '100%',
+            backgroundPosition: 'center',
+            backgroundImage: `url(${backgroundClouds})`,
+            backgroundSize: 'cover',
+          }}
+        />
       </Parallax>
     </div>
   )
