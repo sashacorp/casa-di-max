@@ -9,5 +9,5 @@
 
 1. Stripe
 2. /cats & /dogs
-6. Adjust the landing section
-7. Add donate page
+3. Adjust the landing section
+4. Add donate page

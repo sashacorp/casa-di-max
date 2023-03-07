@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 
-import Max from '../../images/max2.png'
+import Max from '../../images/max.png'
 import Onlus from '../../images/onlus.png'
 import Arzana from '../../images/arzana.png'
 import SardinienHunde from '../../images/sardinienhunde.png'
@@ -64,7 +64,7 @@ const useStyles = makeStyles(theme => ({
     },
     descriptionContainer: {
         width: '50rem',
-        border: `10px solid ${theme.palette.common.lightGreen}`,
+        
         borderBottom: `10px solid ${theme.palette.common.yellow}`,
         padding: '2rem 2rem 2rem 2rem',
         margin: '3rem',
@@ -76,11 +76,11 @@ const useStyles = makeStyles(theme => ({
         justifyContent: 'center',
        
         [theme.breakpoints.down('sm')]: {
-            maxWidth: '20rem',   
+            maxWidth: '30rem',   
             padding: '1rem' 
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '15rem',
+            maxWidth: '20rem',
             
             
         },
