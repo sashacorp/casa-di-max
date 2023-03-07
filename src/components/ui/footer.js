@@ -8,7 +8,7 @@ import { Link } from 'gatsby'
 
 import instagram from '../../images/instagram.svg'
 import facebook from '../../images/facebook.svg'
-import twitter from '../../images/twitter.svg'
+
 
 const useStyles = makeStyles(theme =>({
   footer: {

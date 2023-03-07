@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
+import { Parallax, ParallaxLayer} from '@react-spring/parallax'
 import cloud from '../../images/cloud1.png'
 import earth from '../../images/earth.png'
 import littleDog from '../../images/dognaut.png'
@@ -81,39 +81,39 @@ export default function Animation() {
         />
 
         <ParallaxLayer offset={1.3} speed={-0.3} style={{ pointerEvents: 'none' }}>
-          <img src={url('satellite4')} style={{ width: '15%', marginLeft: '80%' }} />
+          <img src={url('satellite4')} style={{ width: '15%', marginLeft: '80%' }} alt="satellite"/>
         </ParallaxLayer>
 
         <ParallaxLayer offset={2} speed={0.8} style={{ opacity: 0.1 }}>
-          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '55%' }} />
-          <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
+          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '55%' }} alt="cloud 1"/>
+          <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '15%' }} alt="cloud 2"/>
         </ParallaxLayer>
 
         <ParallaxLayer offset={3} speed={0.5} style={{ opacity: 0.1 }}>
-          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
-          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '40%' }} />
+          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '70%' }} alt="cloud 3"/>
+          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '40%' }} alt="cloud 4"/>
         </ParallaxLayer>
 
         <ParallaxLayer offset={4} speed={0.2} style={{ opacity: 0.2 }}>
-          <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
-          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '75%' }} />
+          <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '10%' }} alt="cloud 5"/>
+          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '75%' }} alt="cloud 6"/>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
-          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '60%' }} />
-          <img src={cloud} style={{ display: 'block', width: '25%', marginLeft: '30%' }} />
-          <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
+          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '60%' }} alt="cloud 7"/>
+          <img src={cloud} style={{ display: 'block', width: '25%', marginLeft: '30%' }} alt="cloud 8"/>
+          <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '80%' }} alt="cloud 9"/>
         </ParallaxLayer>
 
         <ParallaxLayer offset={4.5} speed={0.4} style={{ opacity: 0.6 }}>
-          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
-          <img src={cloud} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
+          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '5%' }} alt="cloud 10"/>
+          <img src={cloud} style={{ display: 'block', width: '15%', marginLeft: '75%' }} alt="cloud 11"/>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.6} speed={-0.1} style={{ opacity: 0.4 }}>
-          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '60%' }} />
-          <img src={cloud} style={{ display: 'block', width: '25%', marginLeft: '30%' }} />
-          <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
+          <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '60%' }} alt="cloud 12"/>
+          <img src={cloud} style={{ display: 'block', width: '25%', marginLeft: '30%' }} alt="cloud 13"/>
+          <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '80%' }} alt="cloud 14"/>
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -125,7 +125,7 @@ export default function Animation() {
             justifyContent: 'center',
             pointerEvents: 'none',
           }}>
-          <img src={earth} className={classes.responsiveEarth} />
+          <img src={earth} className={classes.responsiveEarth} alt="earth"/>
         </ParallaxLayer>
 
 
@@ -215,7 +215,7 @@ export default function Animation() {
             justifyContent: 'center',
           }}
           onClick={() => parallax.current.scrollTo(3)}>
-          <img src={littleDog} className={classes.responsiveImage} />
+          <img src={littleDog} className={classes.responsiveImage} alt="astrodog and astronaut"/>
         </ParallaxLayer> 
 
         <ParallaxLayer
@@ -225,8 +225,9 @@ export default function Animation() {
             backgroundSize: '100%',
             backgroundPosition: 'center',
             backgroundImage: `url(${backgroundClouds})`,
-            backgroundSize: 'cover',
+            
           }}
+         alt="clouds"
         />
       </Parallax>
     </div>

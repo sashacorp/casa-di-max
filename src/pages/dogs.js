@@ -1,19 +1,19 @@
 import * as React from "react"
 import Layout from "../components/ui/layout"
 import {graphql } from "gatsby"
-import Animation from "../components/home/Animation"
-import Grid from '@material-ui/core/Grid'
-import { makeStyles } from "@material-ui/core/styles"
+// import Animation from "../components/home/Animation"
+// import Grid from '@material-ui/core/Grid'
+// import { makeStyles } from "@material-ui/core/styles"
 
-const useStyles = makeStyles(theme => ({
-  mainContainer: {
-    height: '50rem'
-  }
-}))
+// const useStyles = makeStyles(theme => ({
+//   mainContainer: {
+//     height: '50rem'
+//   }
+// }))
 
 
-const Dogs = ({ data }) => {
-  const classes = useStyles()
+const Dogs = () => {
+  // const classes = useStyles()
   return (
     <Layout>
       {/* <div className="dogs">

@@ -1,7 +1,7 @@
 import React from "react"
 
 import Layout from "../components/ui/layout"
-import WelcomeSection from "../components/welcomesection"
+// import WelcomeSection from "../components/welcomesection"
 import AboutUsSection from "../components/home/AboutUsSection"
 import { makeStyles } from "@material-ui/core/styles"
 import Animation from "../components/home/Animation"

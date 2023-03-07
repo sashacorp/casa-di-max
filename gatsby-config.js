@@ -37,6 +37,10 @@ module.exports = {
     }
   },
   {
+    resolve: `gatsby-plugin-material-ui`,
+    
+  },
+  {
     resolve: `gatsby-plugin-netlify`,
     options: {
       headers: {

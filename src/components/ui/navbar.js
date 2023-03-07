@@ -15,10 +15,10 @@ import { useMediaQuery } from '@material-ui/core';
 import { Link } from 'gatsby'
 
 
-import search from '../../images/search.svg'
-import cat from '../../images/cat.svg'
+// import search from '../../images/search.svg'
+// import cat from '../../images/cat.svg'
 import menu from '../../images/menu.svg'
-import dog from '../../images/account-header.svg'
+// import dog from '../../images/account-header.svg'
 
 const useStyles = makeStyles(theme => ({
     coloredIndicator: {
