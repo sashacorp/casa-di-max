@@ -11,7 +11,7 @@ import backgroundClouds from '../../images/backgroundClouds.png'
 import { Typography } from '@material-ui/core'
 // import { Grid } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
-import { useMediaQuery } from '@mui/material'
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -89,12 +89,12 @@ export default function Animation() {
           <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '15%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.75} speed={0.5} style={{ opacity: 0.1 }}>
+        <ParallaxLayer offset={3} speed={0.5} style={{ opacity: 0.1 }}>
           <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '70%' }} />
           <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '40%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1} speed={0.2} style={{ opacity: 0.2 }}>
+        <ParallaxLayer offset={4} speed={0.2} style={{ opacity: 0.2 }}>
           <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '10%' }} />
           <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '75%' }} />
         </ParallaxLayer>
@@ -105,7 +105,7 @@ export default function Animation() {
           <img src={cloud} style={{ display: 'block', width: '10%', marginLeft: '80%' }} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.6} speed={0.4} style={{ opacity: 0.6 }}>
+        <ParallaxLayer offset={4.5} speed={0.4} style={{ opacity: 0.6 }}>
           <img src={cloud} style={{ display: 'block', width: '20%', marginLeft: '5%' }} />
           <img src={cloud} style={{ display: 'block', width: '15%', marginLeft: '75%' }} />
         </ParallaxLayer>
@@ -117,7 +117,7 @@ export default function Animation() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={6}
+          offset={5.8}
           speed={-0.4}
           style={{
             display: 'flex',
@@ -208,7 +208,7 @@ export default function Animation() {
 
          <ParallaxLayer
           offset={4.8}
-          speed={-0}
+          speed={0.1}
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -219,7 +219,7 @@ export default function Animation() {
         </ParallaxLayer> 
 
         <ParallaxLayer
-          offset={6.5}
+          offset={6.7}
           speed={-0.3}
           style={{
             backgroundSize: '100%',

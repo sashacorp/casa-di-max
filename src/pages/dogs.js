@@ -26,10 +26,7 @@ const Dogs = ({ data }) => {
           ))}
        </ul>
       </div> */}
-      <Grid container classes={{root: classes.mainContainer}}>
-      <Animation />
-      </Grid>
-      
+     
     </Layout>
   )
 }
