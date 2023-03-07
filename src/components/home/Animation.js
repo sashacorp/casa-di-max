@@ -208,7 +208,7 @@ export default function Animation() {
 
          <ParallaxLayer
           offset={4.8}
-          speed={0.1}
+          speed={-0.1}
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -222,7 +222,7 @@ export default function Animation() {
           offset={6.7}
           speed={0.1}
           style={{
-            backgroundSize: '100%',
+            backgroundSize: 'cover',
             backgroundPosition: 'center',
             backgroundImage: `url(${backgroundClouds})`,
             
