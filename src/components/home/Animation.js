@@ -22,7 +22,6 @@ const useStyles = makeStyles(theme => ({
     },
     [theme.breakpoints.down('xs')]: {
       fontSize: '1.5rem',
-      padding: '3px'
     },
    },
    responsiveImage: {
@@ -148,7 +147,7 @@ export default function Animation() {
             justifyContent: 'center',
           }}>
           
-              <Typography variant="h1" style={{color: 'rgba(255, 213, 111, 0.8)'}} classes={{h1: classes.responsiveText}}> 
+              <Typography variant="h1" style={{color: 'rgba(255, 213, 111, 0.8)', width: '70%'}} classes={{h1: classes.responsiveText}}> 
                 Benvenuti al rifugio Casa di Max!
               </Typography>
             
