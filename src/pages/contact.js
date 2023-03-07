@@ -178,7 +178,7 @@ const ContactPage = () => {
   const fields = {
     name: {
       helperText: 'you must enter a name',
-      placeholder: 'Name',
+      placeholder: 'Nome',
       adornment:  <img src={nameAdornment} alt="name"/>
     },
     email: {
@@ -190,14 +190,14 @@ const ContactPage = () => {
     },
     phoneNumber: {
       helperText: 'invalid phone number',
-      placeholder: 'Phone Number',
+      placeholder: 'Numero di telefono',
       adornment: (<div className={classes.PhoneAdornment}>
         <PhoneAdornment color="#fff"/>
        </div>)
     },
     message: {
       helperText: 'you must enter a message',
-      placeholder: 'Message',
+      placeholder: 'Messaggio',
       inputClasses: {
         multiline: classes.multiline, 
         error: classes.multilineError
@@ -243,7 +243,7 @@ const ContactPage = () => {
             alignItems="center"> 
             <Grid item classes={{root: clsx(classes.titleContainer, classes.blockContainer)}}>
             <Typography variant="h4" classes={{root: classes.contactText}}>
-                Contact us
+                Contattaci
              </Typography>
             </Grid>
             <Grid item>
@@ -293,7 +293,7 @@ const ContactPage = () => {
               [classes.buttonDisabled]: disabled
             })}}>
                 <Typography variant="h4" classes={{root: classes.contactText}}>
-                  Send message
+                  Invia un messaggio
                 </Typography>
                 <img src={send} className={classes.sendIcon} alt="send message"/>
             </Grid>
