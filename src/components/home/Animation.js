@@ -21,7 +21,8 @@ const useStyles = makeStyles(theme => ({
       fontSize: '2rem'
     },
     [theme.breakpoints.down('xs')]: {
-      fontSize: '1.5rem'
+      fontSize: '1.5rem',
+      padding: '3px'
     },
    },
    responsiveImage: {
