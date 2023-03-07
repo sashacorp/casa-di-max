@@ -75,7 +75,7 @@ const theme = createTheme({
         body: {
             fontFamily: "Rufina",
             fontSize: "3rem",
-            color: grey,
+            color: green,
            },
            body2: {
             fontFamily: "Rufina",
