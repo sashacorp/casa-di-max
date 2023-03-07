@@ -96,7 +96,7 @@ export default function AboutUsSection(){
     const matchesXS = useMediaQuery(theme => theme.breakpoints.down('xs'))
 
     //const maxSection = "Il nostro rifugio deve il suo nome a Max, un cagnolino che qualche anno fa era stato affidato alla nostra presidentessa Barbara Pistis affinché' se ne prendesse cura, poiché' i suoi vecchi proprietari non avevano più' la possibilità' di dedicargli le dovute attenzioni. Purtroppo pero', un giorno Max è scomparso e da allora non è più' stato ritrovato."
-    const maxSection = "Max è stato un cagnolino molto speciale, tanto da averci spinto a fondare un rifugio in sua memoria!"
+    const maxSection = "Max è stato un cagnolino molto speciale, tanto da averci ispirato a fondare un rifugio in sua memoria!"
     const onlusSection = "Barbara Pistis ha fondato la Onlus ConFidointe a tutela dei pet meno fortunati d'Europa."
     const casaDiMaxSection ="Il rifugio Casa di Max è una struttura attiva nelle campagne ogliastrine, in Sardegna."
     const sardinienHunde = "Tra i nostri amici contiamo la Onlus Sardinien Hunde, che da anni si impegna per la cura e la protezione dei cagnolini della Sardegna."
