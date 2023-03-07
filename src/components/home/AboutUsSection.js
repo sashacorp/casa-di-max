@@ -52,20 +52,20 @@ const useStyles = makeStyles(theme => ({
     mediaItemStyle: {
         width: '40rem',
         maxWidth: '50rem',
+       
         
         [theme.breakpoints.down('sm')]: {
             maxWidth: '30rem',
             
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '20rem',
+            maxWidth: '16.5rem',
             
         }
     },
     descriptionContainer: {
         width: '50rem',
-        
-        borderBottom: `10px solid ${theme.palette.common.yellow}`,
+        borderBottom: `40px solid ${theme.palette.common.yellow}`,
         padding: '2rem 2rem 2rem 2rem',
         margin: '3rem',
         maxWidth: '35rem',
@@ -80,7 +80,8 @@ const useStyles = makeStyles(theme => ({
             padding: '1rem' 
         },
         [theme.breakpoints.down('xs')]: {
-            maxWidth: '20rem',
+            maxWidth: '16.5rem',
+            padding: '1rem 0.1rem 0rem 0.5rem',
             
             
         },
