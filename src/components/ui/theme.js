@@ -42,13 +42,13 @@ const theme = createTheme({
     typography: {
         h1: {
             fontSize : "4.5rem",
-            fontFamily: "'Climate Crisis', cursive;",
+            fontFamily: 'Climate Crisis, cursive',
             fontStyle: "italic",
             fontWeight: 700,
             color: green,
         },
         h2: {
-            fontFamily:  "'Climate Crisis', cursive;",
+            fontFamily:  'Climate Crisis, cursive',
             fontSize: "3rem",
             fontWeight: 600,
             color: offWhite
@@ -57,20 +57,20 @@ const theme = createTheme({
             fontFamily: "Rufina",
             fontSize: "2rem",
             fontWeight: 300,
-            color: yellow, 
+            color: lightGreen, 
         },
         h4: {
-            fontFamily: "Rufina",
-            fontWeight: 700,
-            fontSize: "2rem",
-            color: lightGreen
+            fontFamily: 'Climate Crisis, cursive',
+            fontWeight: 900,
+            fontSize: "3rem",
+            color: green
         },
         h5: {
              fontFamily: "Rufina",
-             fontSize: "1.5rem",
+             fontSize: "1rem",
              fontWeight: 700,
              fontStyle: "italic",
-             color: "#ffffff"
+             color: lightGreen
         },
         body: {
             fontFamily: "Rufina",

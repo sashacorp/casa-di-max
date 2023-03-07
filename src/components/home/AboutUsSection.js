@@ -25,11 +25,8 @@ const useStyles = makeStyles(theme => ({
     },
     welcomeText:{
         color: theme.palette.common.offWhite,
-        [theme.breakpoints.down('md')]: {
-           fontSize: '3rem'
-        },
-        [theme.breakpoints.down('sm')]: {
-            fontSize: '1.5rem'
+        [theme.breakpoints.down('xs')]: {
+            fontSize: '2.5rem'
          },
     },
     span:{
@@ -81,24 +78,16 @@ const useStyles = makeStyles(theme => ({
             
             
         },
-        titleText: {
-            [theme.breakpoints.down('sm')]: {
-                fontSize: '1.5rem'
-            },
-        },
-        hCorrection: {
-            [theme.breakpoints.down('sm')]: {
-                fontSize: '0.8rem'
-            },
-        }
+        
 
     }
 
 }))
-
+const isBrowser = typeof window !== "undefined"
 export default function AboutUsSection(){
     const classes = useStyles()
     const matchesMD = useMediaQuery(theme => theme.breakpoints.down('md'))
+    const matchesXS = useMediaQuery(theme => theme.breakpoints.down('xs'))
 
     //const maxSection = "Il nostro rifugio deve il suo nome a Max, un cagnolino che qualche anno fa era stato affidato alla nostra presidentessa Barbara Pistis affinché' se ne prendesse cura, poiché' i suoi vecchi proprietari non avevano più' la possibilità' di dedicargli le dovute attenzioni. Purtroppo pero', un giorno Max è scomparso e da allora non è più' stato ritrovato."
     const maxSection = "Max è stato un cagnolino molto speciale, tanto da averci spinto a fondare un rifugio in sua memoria!"
@@ -108,22 +97,22 @@ export default function AboutUsSection(){
             
     const sections = [
         {
-            title: 'Max',
+            title: <span>Max</span>,
             media: Max,
             content: maxSection,
         },
         { 
-            title: 'Onlus',
+            title: <span>Onlus</span>,
             media: Onlus,
             content: onlusSection
         },
         {
-            title: 'Casa di Max',
+            title: <span>Casa di Max</span>,
             media: Arzana,
             content: casaDiMaxSection
         },
         {
-            title: 'Sardinien Hunde',
+            title: <span>Sardinien {isBrowser && matchesXS ? <br /> : null} Hunde</span>,
             media: SardinienHunde,
             content: sardinienHunde
         }
@@ -133,7 +122,7 @@ export default function AboutUsSection(){
         <Grid container direction="column" classes={{root: classes.mainContainer}} alignItems="center">
           <Grid item classes={{root: classes.welcomeContainer}}>
             <Typography variant="h1" classes={{root: classes.welcomeText}}>
-               Benvenuti al rifugio <span className={classes.span}>Casa di Max!</span>
+               Benvenuti al rifugio <span className={classes.span}>  {isBrowser && matchesXS ? <br /> : null} Casa di Max!</span>
             </Typography>
           </Grid>
           <Grid item>
@@ -148,12 +137,12 @@ export default function AboutUsSection(){
                 <Grid item classes={{root: classes.descriptionContainer}}>
                     <Grid item container direction="column" justifyContent="center">
                         <Grid item>
-                            <Typography variant="h1" classes={{root: classes.titleText}}>
+                            <Typography variant={isBrowser && matchesXS ? "h4": "h1"} >
                                 {title}
                             </Typography>
                         </Grid>
                         <Grid item>
-                            <Typography variant="h4" classes={{root: classes.hCorrection}}>
+                            <Typography variant={isBrowser && matchesXS? "h5" : "h3"} >
                                 {content}
                             </Typography>
                         </Grid>
