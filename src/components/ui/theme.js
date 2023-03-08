@@ -60,7 +60,7 @@ const theme = createTheme({
             color: lightGreen, 
         },
         h4: {
-            fontFamily: 'Climate Crisis, cursive',
+            fontFamily: 'Climate Crisis',
             fontWeight: 900,
             fontSize: "3rem",
             color: '#fff'
