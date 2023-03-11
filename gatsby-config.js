@@ -27,7 +27,7 @@ module.exports = {
   },
    // CMS
    // SASS
-  plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-sass",
+  plugins: [ "gatsby-plugin-remove-serviceworker", "gatsby-plugin-netlify-cms", "gatsby-plugin-sass",
   {
     resolve: 'gatsby-plugin-web-font-loader',
     options: {
