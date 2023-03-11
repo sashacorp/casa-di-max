@@ -1,31 +1,38 @@
-import * as React from "react"
-import Layout from "../components/ui/layout"
-import {graphql } from "gatsby"
-// import Animation from "../components/home/Animation"
-// import Grid from '@material-ui/core/Grid'
-// import { makeStyles } from "@material-ui/core/styles"
+import React from "react"
 
-// const useStyles = makeStyles(theme => ({
-//   mainContainer: {
-//     height: '50rem'
-//   }
-// }))
+import Layout from "../components/ui/layout"
+// import WelcomeSection from "../components/welcomesection"
+import AboutUsSection from "../components/home/AboutUsSection"
+import { makeStyles } from "@material-ui/core/styles"
+import Animation from "../components/home/Animation"
+import Grid from '@material-ui/core/Grid'
+
+const useStyles = makeStyles(theme => ({
+  spacer: {
+    
+    height: '1rem',
+    backgroundColor: theme.palette.primary.main
+  },
+  mainContainer: {
+    height: '50rem'
+  },
+  
+  
+}))
+
+
 
 
 const Dogs = () => {
   // const classes = useStyles()
   return (
     <Layout>
-      {/* <div className="dogs">
-        <h1>Dogs</h1>
-        <ul>
-          {data.allMdx.edges.map(({ node }) => (
-            <li key={node.id}>
-               <Link to={`${node.frontmatter.slug}`}>{node.frontmatter.title}</Link>
-            </li>
-          ))}
-       </ul>
-      </div> */}
+        <Grid container classes={{root: classes.mainContainer}}>
+      <Animation />
+      </Grid>
+       <div className={classes.spacer}/>
+
+      <AboutUsSection />
      
     </Layout>
   )
