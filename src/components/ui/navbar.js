@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
@@ -56,6 +55,12 @@ const useStyles = makeStyles(theme => ({
             marginRight: "auto",
             
         }
+    },
+    titleButton: {
+    ...theme.typography.h1,
+    fontSize: '1.5rem',
+    textTransform: 'none',
+    color: theme.palette.common.offWhite,
     },
     drawer: {
         backgroundColor: theme.palette.common.offWhite,
@@ -159,10 +164,10 @@ function NavBar() {
     return (
         <AppBar elevation={0} position="static" classes={{root: classes.appBar}}>
             <Toolbar>
-                <Button component={Link} to="/" classes={{ root: classes.logoContainer}}>
-                    <Typography variant="h1" classes={{root: classes.text}}>
+                <Button component={Link} to="/" classes={{ root: classes.logoContainer, text: classes.titleButton}}>
+                    
                         Casa di Max
-                    </Typography>
+                   
                 </Button> 
                 {matchesMD ? drawer : tabs}
                 {actions.map(action => 

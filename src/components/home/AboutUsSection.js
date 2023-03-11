@@ -50,8 +50,7 @@ const useStyles = makeStyles(theme => ({
        
     },
     mediaItemStyle: {
-        width: '40rem',
-        maxWidth: '50rem',
+       
        
         
         [theme.breakpoints.down('sm')]: {
