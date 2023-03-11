@@ -13,27 +13,16 @@ const useStyles = makeStyles(theme => ({
 
 function Layout({ children }) {
     const classes = useStyles()
-    // const data = useStaticQuery(graphql` 
-    // query MyQuery {
-    //   allStrapiCategory {
-    //     edges {
-    //       node {
-    //         name
-    //         strapi_id
-    //       }
-    //     }
-    //   }
-    // }`)
     
   return (
-    <div>
+    <>
      <NavBar/>
      <div className={classes.spacer}/>
       <main>
        {children}
       </main>
       <Footer style={{bottom: 0}}/>
-    </div>
+    </>
   )
 }
 
