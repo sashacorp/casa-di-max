@@ -4,7 +4,7 @@ import theme from './theme'
 
 const RootWrapper = ( { element } ) => {
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={theme} injectFirst>
             {element}
         </ThemeProvider>
     )
