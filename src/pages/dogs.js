@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
 
 
 const Dogs = () => {
-  // const classes = useStyles()
+  const classes = useStyles()
   return (
     <Layout>
         <Grid container classes={{root: classes.mainContainer}}>
@@ -44,25 +44,25 @@ export default Dogs
 
 
 
-export const query= graphql`
-  query{
-    allMdx(filter: {frontmatter: {slug: {regex: "\\/dogs//"}}}) {
-      edges {
-        node {
-          id
-          frontmatter {
-            slug
-            title
-          }
-          tableOfContents(maxDepth: 10)
-          internal {
-            contentFilePath
-          }
-        }
-      }
-      pageInfo {
-        currentPage
-      }
-    }
-  }`
+// export const query= graphql`
+//   query{
+//     allMdx(filter: {frontmatter: {slug: {regex: "\\/dogs//"}}}) {
+//       edges {
+//         node {
+//           id
+//           frontmatter {
+//             slug
+//             title
+//           }
+//           tableOfContents(maxDepth: 10)
+//           internal {
+//             contentFilePath
+//           }
+//         }
+//       }
+//       pageInfo {
+//         currentPage
+//       }
+//     }
+//   }`
 

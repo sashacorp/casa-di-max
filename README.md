@@ -6,8 +6,4 @@
 
 ## To Do 
 
-
-1. Stripe
-2. /cats & /dogs
-3. Adjust the landing section
-4. Add donate page
+1. Solve the partial hydration problem
