@@ -10,7 +10,7 @@ import Grid from '@material-ui/core/Grid'
 const useStyles = makeStyles(theme => ({
   spacer: {
     
-    height: '1rem',
+    height: '5rem',
     backgroundColor: theme.palette.primary.main
   },
   mainContainer: {
@@ -18,7 +18,7 @@ const useStyles = makeStyles(theme => ({
   },
   
   
-}, {index: 1}))
+}))
 
 
 
