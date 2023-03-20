@@ -89,6 +89,7 @@ function NavBar() {
     // Data
     const routes = [
         {node: {name: 'Come Contattarci', link: '/contact'}},
+        {node: {name: 'Dona', a: 'https://www.patreon.com/user?u=90622049'}}
         
         //{node: {name: 'About Us', link: '/aboutus'}}
     ]
@@ -123,7 +124,9 @@ function NavBar() {
         classes={{ indicator: classes.coloredIndicator, root: classes.tabs}}>
             {routes.map(route => (
                 <Tab 
-                component={Link}
+                component={route.node.link? Link : "a"}
+                href={route.node.a}
+                target="_blank"
                 to={route.node.link || `/${route.node.name.toLowerCase()}`}
                 classes={{root: classes.tab}}
                 label={route.node.name} 
@@ -147,7 +150,9 @@ function NavBar() {
                    divider 
                    button 
                    key={route.node.name.toLowerCase()} 
-                   component={Link} 
+                   component={route.node.link? Link : "a"}
+                   href={route.node.a}
+                   target="_blank"
                    to={route.node.link || `/${route.node.name.toLowerCase()}`}
                    
                    >

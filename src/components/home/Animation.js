@@ -172,7 +172,7 @@ export default function Animation() {
             
           }}>
           <Typography variant="h1" style={{color: 'rgba(255, 213, 111, 0.8)', width: '70%'}}  classes={{h1: classes.responsiveText}}> 
-          Barbara Pistis ha istituito la Onlus ConFidointe a tutela dei pet meno fortunati d'Europa.
+          Barbara Pistis ha istituito la Onlus ConFidointe a tutela dei pet meno fortunati della Sardegna.
               </Typography>
         </ParallaxLayer> 
 
@@ -202,7 +202,7 @@ export default function Animation() {
             
           }}>
           <Typography variant="h1" style={{color: 'rgba(255, 213, 111, 0.8)', width: '70%'}}  classes={{h1: classes.responsiveText}}> 
-          Tra i nostri amici contiamo la Onlus Sardinien Hunde, che da anni si impegna per la cura e la protezione dei cagnolini della Sardegna.
+          Tra i nostri amici contiamo Sardinien Hunde, che da anni si impegna per la cura e la protezione dei cagnolini della Sardegna.
               </Typography>
         </ParallaxLayer> 
 

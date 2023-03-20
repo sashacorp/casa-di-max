@@ -100,7 +100,7 @@ export default function AboutUsSection(){
 
     //const maxSection = "Il nostro rifugio deve il suo nome a Max, un cagnolino che qualche anno fa era stato affidato alla nostra presidentessa Barbara Pistis affinché' se ne prendesse cura, poiché' i suoi vecchi proprietari non avevano più' la possibilità' di dedicargli le dovute attenzioni. Purtroppo pero', un giorno Max è scomparso e da allora non è più' stato ritrovato."
     const maxSection = "Abbiamo più di centocinquanta cagnolini in cerca di una famiglia."
-    const onlusSection = "Partecipa a una raccolta fondi o visita il nostro store online."
+    const onlusSection = "Partecipa a una raccolta fondi o visita il nostro patreon."
     const casaDiMaxSection ="Il modo migliore per rimanere aggiornati sulla vita alla Casa di Max è senza dubbio seguirci su Instagram e Facebook"
     const sardinienHunde = "Scopri come raggiungere il rifugio."
             
