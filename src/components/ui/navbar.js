@@ -57,9 +57,11 @@ const useStyles = makeStyles(theme => ({
         }
     },
     titleButton: {
-    ...theme.typography.h1,
+    fontFamily: 'Climate Crisis',
     fontSize: '1.5rem',
     textTransform: 'none',
+    fontStyle: "italic",
+    fontWeight: 700,
     color: theme.palette.common.offWhite,
     },
     drawer: {
