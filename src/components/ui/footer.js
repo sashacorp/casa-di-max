@@ -12,7 +12,7 @@ import facebook from '../../images/facebook.svg'
 
 const useStyles = makeStyles(theme =>({
   footer: {
-   backgroundColor: theme.palette.primary.main,
+   
    padding: "2rem",
   },  
   linkColumn: {

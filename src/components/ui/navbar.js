@@ -23,10 +23,6 @@ const useStyles = makeStyles(theme => ({
     coloredIndicator: {
         backgroundColor: theme.palette.common.yellow
     },
-    appBar: {
-        backgroundColor: theme.palette.primary.main,
-
-    },
     text: {
         textTransform :"none",
         color: theme.palette.common.offWhite,
@@ -169,7 +165,7 @@ function NavBar() {
   
     
     return (
-        <AppBar elevation={0} position="static" classes={{root: classes.appBar}}>
+        <AppBar elevation={0} position="static" color="transparent">
             <Toolbar>
                 <Button component={Link} to="/" classes={{ root: classes.logoContainer, text: classes.titleButton}}>
                     
