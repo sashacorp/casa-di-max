@@ -67,11 +67,12 @@ const useStyles = makeStyles(theme => ({
     listItemText: {
         color: theme.palette.primary.main,
         fontWeight: 400,
-        fontSize: '1.3rem'
+        fontSize: '1.2rem'
     },
     tab: {
         ...theme.typography.body1,
-        fontSize: "0.9rem"
+        fontSize: "0.9rem",
+        color: '#fff'
     },
 }))
 const isBrowser = typeof window !== "undefined"
