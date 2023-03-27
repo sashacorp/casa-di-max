@@ -7,3 +7,4 @@
 ## To Do 
 
 1. Solve the partial hydration problem
+2. Add gs 
